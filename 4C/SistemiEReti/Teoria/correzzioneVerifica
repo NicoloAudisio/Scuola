@@ -1,0 +1,58 @@
+Denina
+
+Indirizzo di rete: 	172.16.0.0 / 16
+Maschera di rete: 	255.255.0.0
+Broadcast: 		172.16.255.255
+Range IP: 		172.16.0.1 - 172.16.255.253
+Default gateway:	172.16.255.254
+
+
+Pellico
+
+Indirizzo di rete: 	172.17.0.0 / 16
+Maschera di rete: 	255.255.0.0
+Broadcast: 		172.17.255.255
+Range IP: 		172.17.0.1 - 172.17.255.253
+Default gateway:	172.17.255.254
+
+
+Rivoira
+
+Indirizzo di rete: 	172.18.0.0 / 16
+Maschera di rete:	255.255.0.0
+Broadcast:		172.18.255.255
+Range IP:		172.18.0.1 - 172.18.255.253
+Default gatway:		172.18.255.254
+
+
+	172.18.0.0
+	172.18.00 | 00 0000.0000 0000 / 18
+	172.18.01 | 00 0000.0000 0000 / 18
+	172.18.10 | 00 0000.0000 0000 / 18
+	172.18.11 | 00 0000.0000 0000 / 18
+
+
+	Medie				172.18.00 | 00 0000.0000 0000 / 18
+		Indirizzo di rete:	172.18.0.0
+		Broadcast:		172.18.63.255 -> 172.18.00 | 11 1111 1111.1111 1111 / 18
+		Maschera di rete:	255.255.192.0 -> 255.255.1.1 | 00 0000 0000.0000 0000 / 18
+		Range IP:		172.18.0.1 - 172.18.63.253
+		Default Gateway:	172.18.63.254
+
+	
+	Mulino
+		Indirizzo di rete:	172.18.64.0
+		Broadcast:		172.18.127.255
+		Maschera di rete:	255.255.192.0
+		Range IP:		172.18.64.1 - 172.18.182.253
+		Default Gateway:	172.18.127.254
+	
+	
+	Oratorio
+		Indirizzo di rete:	172.18.128.0
+		Broadcast:		172.18.191.255
+		Maschera di rete:	255.255.192.0
+		Range IP:		172.18.128.1 - 172.18.191.253
+		Default Gateway:	172.18.191.254
+	
+	
