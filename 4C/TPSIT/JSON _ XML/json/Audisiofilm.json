@@ -1,0 +1,113 @@
+[
+    {
+        "titolo": "Toro scatenato",
+        "copertina_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ9vrPtG04YcvhnruOyB_SYIF2dvs6YYTfUHQRqSeT2CKGWusZE",
+        "copertina": "toro_scatenato.jpg",
+        "anno": 1980,
+        "durata": 129,
+        "bimbi": "SI",
+        "gruppo": "",
+        "note": "",
+        "trailer_ITA_url": "https://youtu.be/2BtkgsZdEuI"
+    },
+    {
+        "titolo": "L'appartamento",
+        "copertina_url": "https://pad.mymovies.it/filmclub/2002/08/198/locandina.jpg",
+        "copertina": "l'appartamento.jpg",
+        "anno": 1960,
+        "durata": 125,
+        "bimbi": "SI",
+        "gruppo": "",
+        "note": "",
+        "trailer_ITA_url": "https://youtu.be/4zB8_RjZUgA"
+    },
+    {
+        "titolo": "Chinatown",
+        "copertina_url": "https://pad.mymovies.it/filmclub/2006/02/269/locandina.jpg",
+        "copertina": "chinatown.jpg",
+        "anno": 1974,
+        "durata": 131,
+        "bimbi": "NO",
+        "gruppo": "",
+        "note": "",
+        "trailer_ITA_url": "https://youtu.be/T37QkBc4IGY"
+    },
+    {
+        "titolo": "C'era una volta il West",
+        "copertina_url": "https://pad.mymovies.it/filmclub/2002/08/289/locandina.jpg",
+        "copertina": "c'era_una_volta_il_west.jpg",
+        "anno": 1968,
+        "durata": 175,
+        "bimbi": "SI",
+        "gruppo": "",
+        "note": "",
+        "trailer_ITA_url": "https://youtu.be/LTcTVeShSV8"
+    },
+    {
+        "titolo": "Il cavaliere oscuro",
+        "copertina_url": "https://pad.mymovies.it/filmclub/2007/02/131/locandina.jpg",
+        "copertina": "il_cavaliere_oscuro.jpg",
+        "anno": 2008,
+        "durata": 142,
+        "bimbi": "NO",
+        "gruppo": "",
+        "note": "",
+        "trailer_ITA_url": "https://youtu.be/yqcDBdk8wpo"
+    },
+    {
+        "titolo": "Odissea nello spazio",
+        "copertina_url": "https://pad.mymovies.it/filmclub/2001/03/009/locandina.jpg",
+        "copertina": "odissea_nello_spazio.jpg",
+        "anno": 1968,
+        "durata": 139,
+        "bimbi": "NO",
+        "gruppo": "",
+        "note": "",
+        "trailer_ITA_url": "https://youtu.be/ivPu3t2j4Fg"
+    },
+    {
+        "titolo": "Taxi Driver",
+        "copertina_url": "https://pad.mymovies.it/filmclub/2004/51/032/coverlg_home.jpg",
+        "copertina": "taxi_driver.jpg",
+        "anno": 1996,
+        "durata": 114,
+        "bimbi": "NO",
+        "gruppo": "",
+        "note": "",
+        "trailer_ITA_url": "https://youtu.be/d07aBOLvmuI"
+    },
+    {
+        "titolo": "Casablanca",
+        "copertina_url": "https://upload.wikimedia.org/wikipedia/commons/b/b3/CasablancaPoster-Gold.jpg",
+        "copertina": "casablanca.jpg",
+        "anno": 1942,
+        "durata": 102,
+        "bimbi": "NO",
+        "gruppo": "",
+        "note": "",
+        "trailer_ITA_url": "hhttps://youtu.be/BkL9l7qovsE"
+    },
+    {
+        "titolo": "Il padrino - Parte II",
+        "copertina_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSrgLqpRPU5vt_B_O_hpqHc-ouNioyeOqWtxTxRfTwNMipqvL1u",
+        "copertina": "il_padrino_parte_II.jpg",
+        "anno": 1974,
+        "durata": 202,
+        "bimbi": "NO",
+        "gruppo": "",
+        "note": "",
+        "trailer_ITA_url": "https://youtu.be/3m-gt3JyDvE"
+    },
+    {
+        "titolo": "Blade Runner",
+        "copertina_url": "https://mr.comingsoon.it/imgdb/locandine/big/1401.jpg",
+        "copertina": "blade_runner.jpg",
+        "anno": 1982,
+        "durata": 117,
+        "bimbi": "SI",
+        "gruppo": "",
+        "note": "",
+        "trailer_ITA_url": "https://youtu.be/gCcx85zbxz4"
+    }
+]
+   
