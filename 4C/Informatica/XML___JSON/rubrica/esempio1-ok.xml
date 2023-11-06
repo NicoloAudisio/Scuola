@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<main>
-   <Persona1 nome="Simone">
-      <eta>18</eta>
-      <sport disciplina="ciclismo"/>
-   </Persona1>
-</main>
