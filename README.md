@@ -14,7 +14,7 @@ Questo Repository contiene i file dei progetti realizzati nel corso di studi di 
  <img align="left" alt="PHP"  width="50px" height="50px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" />
  <img align="left" alt="Android Studio"  width="50px" height="50px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/androidstudio/androidstudio-original.svg" />
  <img align="left" alt="Github"  width="50px" height="50px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
-  <img align="left" alt="React"  width="50px" height="50px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
+  <img align="left" alt="React"  width="50px" height="50px" src="https://cdn.freebiesupply.com/logos/large/2x/react-1-logo-png-transparent.png" />
  <img align="left" alt="Linux"  width="50px" height="50px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" />
  <img align="left" alt="AstroJS"  width="50px" height="50px" src="https://astro.js.org/astro.png" /> 
  <br />
