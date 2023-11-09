@@ -17,7 +17,7 @@ Questo Repository contiene i file dei progetti realizzati nel corso di studi di 
  <img align="left" alt="Github"  width="50px" height="50px" src="https://icons8.com/icon/62856/github" />
  <img align="left" alt="Linux"  width="50px" height="50px" src="https://icons8.com/icon/892/linux" />
  <img align="left" alt="MacOs"  width="50px" height="50px" src="https://icons8.com/icon/122959/mac-logo" />
- <img align="left" alt="Windows"  width="50px" height="50px" src="https://icons8.com/icon/108792/windows-10" />
+ <img align="left" alt="Windows"  width="50px" height="50px" src="https://icons8.com/icon/108792/windows-10.svg" />
  <br />
  
  #
