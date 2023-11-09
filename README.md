@@ -18,6 +18,9 @@ Questo Repository contiene i file dei progetti realizzati nel corso di studi di 
  <img align="left" alt="Linux"  width="50px" height="50px" src="https://icons8.com/icon/892/linux" />
  <img align="left" alt="MacOs"  width="50px" height="50px" src="https://icons8.com/icon/122959/mac-logo" />
  <img align="left" alt="Windows"  width="50px" height="50px" src="https://icons8.com/icon/108792/windows-10.svg" />
+ <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50px" height="50px" viewBox="0 0 48 48">
+<path fill="#00b0ff" d="M20 25.026L5.011 25 5.012 37.744 20 39.818zM22 25.03L22 40.095 42.995 43 43 25.066zM20 8.256L5 10.38 5.014 23 20 23zM22 7.973L22 23 42.995 23 42.995 5z"></path>
+</svg>
  <br />
  
  #
