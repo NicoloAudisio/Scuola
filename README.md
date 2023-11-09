@@ -21,12 +21,5 @@ Questo Repository contiene i file dei progetti realizzati nel corso di studi di 
  
  #
 
- ### 📺 My Video Tutorial _(Available on Odysee)_
- - [Come creare un Website Blocker con Python](https://odysee.com/@keyezen:9/come-fare-un-website-blocker-con-python:3)
- - [Come creare una Lyric App per una band su Android Studio](https://odysee.com/@keyezen:9/BAND-LYRIC-APP-ANDROID-STUDIO-TUTORIAL-2022:8)
- - [Come pubblicare siti dinamici pubblicamente](https://odysee.com/@keyezen:9/come-pubblicare-siti-dinamici:a)
-
-# 
-
 ### 📈 Le mie statistiche
-![Mattiaudisio's GitHub stats](https://github-readme-stats.vercel.app/api?username=mattiaudisio&hide=contribs,prs&show_icons=true&theme=synthwave)
+![NicoloAudisio's GitHub stats](https://github-readme-stats.vercel.app/api?username=nicoloaudisio&hide=contribs,prs&show_icons=true&theme=synthwave)
