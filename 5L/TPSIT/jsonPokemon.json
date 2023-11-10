@@ -1,0 +1,802 @@
+[
+    {
+        "numero": "252",
+        "nome": "Treecko",
+        "stadio_evolutivo": "Base",
+        "img_url": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/252.png",
+        "tipo": ["Erba"],
+        "debolezze": ["Fuoco", "Ghiaccio", "Veleno", "Volante", "Insetto"]
+    },
+    {
+        "numero": "253",
+        "nome": "Grovyle",
+        "stadio_evolutivo": "Prima Fase",
+        "img_url": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/253.png",
+        "tipo": ["Erba"],
+        "debolezze": ["Fuoco", "Ghiaccio", "Veleno", "Volante", "Insetto"]
+    },
+    {
+        "numero": "254",
+        "nome": "Sceptile",
+        "stadio_evolutivo": "Fase Finale",
+        "img_url": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/254.png",
+        "tipo": ["Erba"],
+        "debolezze": ["Fuoco", "Ghiaccio", "Veleno", "Volante", "Insetto"]
+    },
+    {
+        "numero": "255",
+        "nome": "Torchic",
+        "stadio_evolutivo": "Base",
+        "img_url": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/255.png",
+        "tipo": ["Fuoco"],
+        "debolezze": ["Acqua", "Roccia", "Terreno"]
+    },
+    {
+        "numero": "256",
+        "nome": "Combusken",
+        "stadio_evolutivo": "Prima Fase",
+        "img_url": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/256.png",
+        "tipo": ["Fuoco", "Lotta"],
+        "debolezze": ["Acqua", "Elettrico", "Volante", "Psico"]
+    },
+    {
+        "numero": "257",
+        "nome": "Blaziken",
+        "stadio_evolutivo": "Fase Finale",
+        "img_url": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/257.png",
+        "tipo": ["Fuoco", "Lotta"],
+        "debolezze": ["Acqua", "Elettrico", "Volante", "Psico"]
+    },
+    {
+        "numero": "258",
+        "nome": "Mudkip",
+        "stadio_evolutivo": "Base",
+        "img_url": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/258.png",
+        "tipo": ["Acqua"],
+        "debolezze": ["Elettrico", "Erba"]
+    },
+    {
+        "numero": "259",
+        "nome": "Marshtomp",
+        "stadio_evolutivo": "Prima Fase",
+        "img_url": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/259.png",
+        "tipo": ["Acqua", "Terra"],
+        "debolezze": ["Erba"]
+    },
+    {
+        "numero": "260",
+        "nome": "Swampert",
+        "stadio_evolutivo": "Fase Finale",
+        "img_url": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/260.png",
+        "tipo": ["Acqua", "Terra"],
+        "debolezze": ["Erba"]
+    },
+    {
+        "numero": "261",
+        "nome": "Poochyena",
+        "stadio_evolutivo": "Base",
+        "img_url": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/261.png",
+        "tipo": ["Buio"],
+        "debolezze": ["Lotta", "Coleottero", "Folletto"]
+    },
+    {
+        "numero": "262",
+        "nome": "Mightyena",
+        "stadio_evolutivo": "Fase Finale",
+        "img_url": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/262.png",
+        "tipo": ["Buio"],
+        "debolezze": ["Lotta", "Coleottero", "Folletto"]
+    },
+    {
+        "numero": "263",
+        "nome": "Zigzagoon",
+        "stadio_evolutivo": "Base",
+        "img_url": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/263.png",
+        "tipo": ["Normale"],
+        "debolezze": []
+    },
+    {
+        "numero": "264",
+        "nome": "Linoone",
+        "stadio_evolutivo": "Fase Finale",
+        "img_url": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/264.png",
+        "tipo": ["Normale"],
+        "debolezze": []
+    },
+    {
+        "numero": "265",
+        "nome": "Wurmple",
+        "stadio_evolutivo": "Base",
+        "img_url": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/265.png",
+        "tipo": ["Coleottero"],
+        "debolezze": ["Fuoco", "Volante", "Roccia"]
+    },
+    {
+        "numero": "266",
+        "nome": "Silcoon",
+        "stadio_evolutivo": "Prima Fase",
+        "img_url": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/266.png",
+        "tipo": ["Coleottero"],
+        "debolezze": ["Fuoco", "Volante", "Roccia"]
+    },
+    {
+        "numero": "267",
+        "nome": "Beautifly",
+        "stadio_evolutivo": "Fase Finale",
+        "img_url": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/267.png",
+        "tipo": ["Coleottero", "Volante"],
+        "debolezze": ["Elettrico", "Ghiaccio", "Roccia"]
+    },
+    {
+        "numero": "268",
+        "nome": "Cascoon",
+        "stadio_evolutivo": "Prima Fase",
+        "img_url": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/268.png",
+        "tipo": ["Coleottero"],
+        "debolezze": ["Fuoco", "Volante", "Roccia"]
+    },
+    {
+        "numero": "269",
+        "nome": "Dustox",
+        "stadio_evolutivo": "Fase Finale",
+        "img_url": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/269.png",
+        "tipo": ["Coleottero", "Veleno"],
+        "debolezze": ["Fuoco", "Volante", "Psico", "Roccia"]
+    },
+    {
+        "numero": "270",
+        "nome": "Lotad",
+        "stadio_evolutivo": "Base",
+        "img_url": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/270.png",
+        "tipo": ["Acqua", "Erba"],
+        "debolezze": ["Veleno", "Volante", "Coleottero", "Fuoco", "Ghiaccio"]
+    },
+    {
+        "numero": "271",
+        "nome": "Lombre",
+        "stadio_evolutivo": "Prima Fase",
+        "img_url": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/271.png",
+        "tipo": ["Acqua", "Erba"],
+        "debolezze": ["Veleno", "Volante", "Coleottero", "Fuoco", "Ghiaccio"]
+    },
+    {
+        "numero": "272",
+        "nome": "Ludicolo",
+        "stadio_evolutivo": "Fase Finale",
+        "img_url": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/272.png",
+        "tipo": ["Acqua", "Erba"],
+        "debolezze": ["Veleno", "Volante", "Coleottero", "Fuoco", "Ghiaccio"]
+    },
+    {
+        "numero": "273",
+        "nome": "Seedot",
+        "stadio_evolutivo": "Base",
+        "img_url": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/273.png",
+        "tipo": ["Erba"],
+        "debolezze": ["Fuoco", "Ghiaccio", "Veleno", "Volante", "Coleottero"]
+    },
+    {
+        "numero": "274",
+        "nome": "Nuzleaf",
+        "stadio_evolutivo": "Prima Fase",
+        "img_url": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/274.png",
+        "tipo": ["Erba", "Buio"],
+        "debolezze": ["Fuoco", "Ghiaccio", "Veleno", "Volante", "Coleottero", "Lotta", "Folletto"]
+    },
+    {
+        "numero": "275",
+        "nome": "Shiftry",
+        "stadio_evolutivo": "Fase Finale",
+        "img_url": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/275.png",
+        "tipo": ["Erba", "Buio"],
+        "debolezze": ["Fuoco", "Ghiaccio", "Veleno", "Volante", "Coleottero", "Lotta", "Folletto"]
+    },
+    {
+        "numero": "276",
+        "nome": "Taillow",
+        "stadio_evolutivo": "Base",
+        "img_url": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/276.png",
+        "tipo": ["Normale", "Volante"],
+        "debolezze": ["Elettrico", "Ghiaccio", "Roccia"]
+    },
+    {
+        "numero": "277",
+        "nome": "Swellow",
+        "stadio_evolutivo": "Fase Finale",
+        "img_url": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/277.png",
+        "tipo": ["Normale", "Volante"],
+        "debolezze": ["Elettrico", "Ghiaccio", "Roccia"]
+    },
+    {
+        "numero": "278",
+        "nome": "Wingull",
+        "stadio_evolutivo": "Base",
+        "img_url": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/278.png",
+        "tipo": ["Acqua", "Volante"],
+        "debolezze": ["Elettrico", "Ghiaccio", "Roccia"]
+    },
+    {
+        "numero": "279",
+        "nome": "Pelipper",
+        "stadio_evolutivo": "Fase Finale",
+        "img_url": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/279.png",
+        "tipo": ["Acqua", "Volante"],
+        "debolezze": ["Elettrico", "Ghiaccio", "Roccia"]
+    },
+    {
+        "numero": "280",
+        "nome": "Ralts",
+        "stadio_evolutivo": "Base",
+        "img_url": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/280.png",
+        "tipo": ["Psico", "Folletto"],
+        "debolezze": ["Spettro", "Coleottero", "Buio", "Acciaio"]
+    },
+    {
+        "numero": "281",
+        "nome": "Kirlia",
+        "stadio_evolutivo": "Prima Fase",
+        "img_url": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/281.png",
+        "tipo": ["Psico", "Folletto"],
+        "debolezze": ["Spettro", "Coleottero", "Buio", "Acciaio"]
+    },
+    {
+        "numero": "282",
+        "nome": "Gardevoir",
+        "stadio_evolutivo": "Fase Finale",
+        "img_url": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/282.png",
+        "tipo": ["Psico", "Folletto"],
+        "debolezze": ["Spettro", "Coleottero", "Buio", "Acciaio"]
+    },
+    {
+        "numero": "283",
+        "nome": "Surskit",
+        "stadio_evolutivo": "Base",
+        "img_url": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/283.png",
+        "tipo": ["Coleottero", "Acqua"],
+        "debolezze": ["Elettrico", "Roccia", "Volante"]
+    },
+    {
+        "numero": "284",
+        "nome": "Masquerain",
+        "stadio_evolutivo": "Fase Finale",
+        "img_url": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/284.png",
+        "tipo": ["Coleottero", "Volante"],
+        "debolezze": ["Elettrico", "Ghiaccio", "Roccia"]
+    },
+    {
+        "numero": "285",
+        "nome": "Shroomish",
+        "stadio_evolutivo": "Base",
+        "img_url": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/285.png",
+        "tipo": ["Erba"],
+        "debolezze": ["Ghiaccio", "Veleno", "Volante", "Coleottero", "Fuoco", "Roccia"]
+    },
+    {
+        "numero": "286",
+        "nome": "Breloom",
+        "stadio_evolutivo": "Fase Finale",
+        "img_url": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/286.png",
+        "tipo": ["Erba", "Lotta"],
+        "debolezze": ["Veleno", "Volante", "Coleottero", "Psico", "Fuoco", "Ghiaccio"]
+    },
+    {
+        "numero": "287",
+        "nome": "Slakoth",
+        "stadio_evolutivo": "Base",
+        "img_url": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/287.png",
+        "tipo": ["Normale"],
+        "debolezze": []
+    },
+    {
+        "numero": "288",
+        "nome": "Vigoroth",
+        "stadio_evolutivo": "Prima Fase",
+        "img_url": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/288.png",
+        "tipo": ["Normale"],
+        "debolezze": []
+    },
+    {
+        "numero": "289",
+        "nome": "Slaking",
+        "stadio_evolutivo": "Fase Finale",
+        "img_url": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/289.png",
+        "tipo": ["Normale"],
+        "debolezze": []
+    },
+    {
+        "numero": "290",
+        "nome": "Nincada",
+        "stadio_evolutivo": "Base",
+        "img_url": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/290.png",
+        "tipo": ["Coleottero", "Terra"],
+        "debolezze": ["Fuoco", "Volante", "Roccia"]
+    },
+    {
+        "numero": "291",
+        "nome": "Ninjask",
+        "stadio_evolutivo": "Fase Finale",
+        "img_url": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/291.png",
+        "tipo": ["Coleottero", "Volante"],
+        "debolezze": ["Elettrico", "Ghiaccio", "Roccia"]
+    },
+    {
+        "numero": "292",
+        "nome": "Shedinja",
+        "stadio_evolutivo": "Fase Finale",
+        "img_url": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/292.png",
+        "tipo": ["Coleottero", "Spettro"],
+        "debolezze": ["Fuoco", "Volante", "Spettro", "Buio"]
+    },
+    {
+        "numero": "293",
+        "nome": "Whismur",
+        "stadio_evolutivo": "Base",
+        "img_url": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/293.png",
+        "tipo": ["Normale"],
+        "debolezze": []
+    },
+    {
+        "numero": "294",
+        "nome": "Loudred",
+        "stadio_evolutivo": "Prima Fase",
+        "img_url": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/294.png",
+        "tipo": ["Normale"],
+        "debolezze": []
+    },
+    {
+        "numero": "295",
+        "nome": "Exploud",
+        "stadio_evolutivo": "Fase Finale",
+        "img_url": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/295.png",
+        "tipo": ["Normale"],
+        "debolezze": []
+    },
+    {
+        "numero": "296",
+        "nome": "Makuhita",
+        "stadio_evolutivo": "Base",
+        "img_url": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/296.png",
+        "tipo": ["Lotta"],
+        "debolezze": ["Volante", "Psico", "Folletto"]
+    },
+    {
+        "numero": "297",
+        "nome": "Hariyama",
+        "stadio_evolutivo": "Fase Finale",
+        "img_url": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/297.png",
+        "tipo": ["Lotta"],
+        "debolezze": ["Volante", "Psico", "Folletto"]
+    },
+    {
+        "numero": "298",
+        "nome": "Azurill",
+        "stadio_evolutivo": "Base",
+        "img_url": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/298.png",
+        "tipo": ["Normale", "Folletto"],
+        "debolezze": []
+    },
+    {
+        "numero": "299",
+        "nome": "Nosepass",
+        "stadio_evolutivo": "Base",
+        "img_url": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/299.png",
+        "tipo": ["Roccia"],
+        "debolezze": ["Acqua, Erba, Lotta, Terra, Acciaio"]
+    },
+    {
+        "numero": "300",
+        "nome": "Skitty",
+        "stadio_evolutivo": "Base",
+        "img_url": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/300.png",
+        "tipo": ["Normale"],
+        "debolezze": []
+    },
+    {
+        "numero": "301",
+        "nome": "Delcatty",
+        "stadio_evolutivo": "Fase Finale",
+        "img_url": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/301.png",
+        "tipo": ["Normale"],
+        "debolezze": []
+    },
+    {
+        "numero": "302",
+        "nome": "Sableye",
+        "stadio_evolutivo": "Base",
+        "img_url": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/302.png",
+        "tipo": ["Buio", "Spettro"],
+        "debolezze": ["Folletto"]
+    },
+    {
+        "numero": "303",
+        "nome": "Mawile",
+        "stadio_evolutivo": "Base",
+        "img_url": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/303.png",
+        "tipo": ["Acciaio", "Folletto"],
+        "debolezze": ["Terra, Lotta, Fuoco"]
+    },
+    {
+        "numero": "304",
+        "nome": "Aron",
+        "stadio_evolutivo": "Base",
+        "img_url": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/304.png",
+        "tipo": ["Acciaio", "Roccia"],
+        "debolezze": ["Lotta, Acqua, Terra"]
+    },
+    {
+        "numero": "305",
+        "nome": "Lairon",
+        "stadio_evolutivo": "Prima Fase",
+        "img_url": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/305.png",
+        "tipo": ["Acciaio", "Roccia"],
+        "debolezze": ["Lotta, Acqua, Terra"]
+    },
+    {
+        "numero": "306",
+        "nome": "Aggron",
+        "stadio_evolutivo": "Fase Finale",
+        "img_url": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/306.png",
+        "tipo": ["Acciaio", "Roccia"],
+        "debolezze": ["Lotta, Acqua, Terra"]
+    },
+    {
+        "numero": "307",
+        "nome": "Meditite",
+        "stadio_evolutivo": "Base",
+        "img_url": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/307.png",
+        "tipo": ["Lotta", "Psico"],
+        "debolezze": ["Volante, Spettro, Psico, Folletto"]
+    },
+    {
+        "numero": "308",
+        "nome": "Medicham",
+        "stadio_evolutivo": "Fase Finale",
+        "img_url": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/308.png",
+        "tipo": ["Lotta", "Psico"],
+        "debolezze": ["Volante, Spettro, Psico, Folletto"]
+    },
+    {
+        "numero": "309",
+        "nome": "Electrike",
+        "stadio_evolutivo": "Base",
+        "img_url": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/309.png",
+        "tipo": ["Elettrico"],
+        "debolezze": ["Terra"]
+    },
+    {
+        "numero": "310",
+        "nome": "Manectric",
+        "stadio_evolutivo": "Fase Finale",
+        "img_url": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/310.png",
+        "tipo": ["Elettrico"],
+        "debolezze": ["Terra"]
+    },
+    {
+        "numero": "311",
+        "nome": "Plusle",
+        "stadio_evolutivo": "Base",
+        "img_url": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/311.png",
+        "tipo": ["Elettrico"],
+        "debolezze": ["Terra"]
+    },
+    {
+        "numero": "312",
+        "nome": "Minun",
+        "stadio_evolutivo": "Base",
+        "img_url": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/312.png",
+        "tipo": ["Elettrico"],
+        "debolezze": ["Terra"]
+    },
+    {
+        "numero": "313",
+        "nome": "Volbeat",
+        "stadio_evolutivo": "Base",
+        "img_url": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/313.png",
+        "tipo": ["Coleottero"],
+        "debolezze": ["Fuoco, Roccia, Volante"]
+    },
+    {
+        "numero": "314",
+        "nome": "Illumise",
+        "stadio_evolutivo": "Base",
+        "img_url": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/314.png",
+        "tipo": ["Coleottero"],
+        "debolezze": ["Fuoco, Roccia, Volante"]
+    },
+    {
+        "numero": "315",
+        "nome": "Roselia",
+        "stadio_evolutivo": "Base",
+        "img_url": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/315.png",
+        "tipo": ["Erba", "Veleno"],
+        "debolezze": ["Fuoco, Ghiaccio, Volante, Psico"]
+    },
+    {
+        "numero": "316",
+        "nome": "Gulpin",
+        "stadio_evolutivo": "Base",
+        "img_url": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/316.png",
+        "tipo": ["Veleno"],
+        "debolezze": ["Psico, Terra"]
+    },
+    {
+        "numero": "317",
+        "nome": "Swalot",
+        "stadio_evolutivo": "Fase Finale",
+        "img_url": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/317.png",
+        "tipo": ["Veleno"],
+        "debolezze": ["Psico, Terra"]
+    },
+    {
+        "numero": "318",
+        "nome": "Carvanha",
+        "stadio_evolutivo": "Base",
+        "img_url": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/318.png",
+        "tipo": ["Acqua", "Buio"],
+        "debolezze": ["Folletto, Lotta, Bug, Elettrico, Erba, Acqua"]
+    },
+    {
+        "numero": "319",
+        "nome": "Sharpedo",
+        "stadio_evolutivo": "Fase Finale",
+        "img_url": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/319.png",
+        "tipo": ["Acqua", "Buio"],
+        "debolezze": ["Folletto, Lotta, Bug, Elettrico, Erba, Acqua"]
+    },
+    {
+        "numero": "320",
+        "nome": "Wailmer",
+        "stadio_evolutivo": "Base",
+        "img_url": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/320.png",
+        "tipo": ["Acqua"],
+        "debolezze": ["Elettrico, Erba"]
+    },
+    {
+        "numero": "321",
+        "nome": "Wailord",
+        "stadio_evolutivo": "Fase Finale",
+        "img_url": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/321.png",
+        "tipo": ["Acqua"],
+        "debolezze": ["Elettrico, Erba"]
+    },
+    {
+        "numero": "322",
+        "nome": "Numel",
+        "stadio_evolutivo": "Base",
+        "img_url": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/322.png",
+        "tipo": ["Fuoco", "Terra"],
+        "debolezze": ["Acqua, Terra, Roccia"]
+    },
+    {
+        "numero": "323",
+        "nome": "Camerupt",
+        "stadio_evolutivo": "Fase Finale",
+        "img_url": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/323.png",
+        "tipo": ["Fuoco", "Terra"],
+        "debolezze": ["Acqua, Terra, Roccia"]
+    },
+    {
+        "numero": "324",
+        "nome": "Torkoal",
+        "stadio_evolutivo": "Fase Unica",
+        "img_url": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/324.png",
+        "tipo": ["Fuoco"],
+        "debolezze": ["Acqua, Terra, Roccia"]
+    },
+    {
+        "numero": "325",
+        "nome": "Spoink",
+        "stadio_evolutivo": "Base",
+        "img_url": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/325.png",
+        "tipo": ["Psico"],
+        "debolezze": ["Buio, Spettro, Coleottero"]
+    },
+    {
+        "numero": "326",
+        "nome": "Grumpig",
+        "stadio_evolutivo": "Fase Finale",
+        "img_url": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/326.png",
+        "tipo": ["Psico"],
+        "debolezze": ["Buio, Spettro, Coleottero"]
+    },
+    {
+        "numero": "327",
+        "nome": "Spinda",
+        "stadio_evolutivo": "Fase Unica",
+        "img_url": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/327.png",
+        "tipo": ["Normale"],
+        "debolezze": []
+    },
+    {
+        "numero": "328",
+        "nome": "Trapinch",
+        "stadio_evolutivo": "Base",
+        "img_url": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/328.png",
+        "tipo": ["Terra"],
+        "debolezze": ["Acqua, Ghiaccio, Erba"]
+    },
+    {
+        "numero": "329",
+        "nome": "Vibrava",
+        "stadio_evolutivo": "Prima Fase",
+        "img_url": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/329.png",
+        "tipo": ["Terra", "Drago"],
+        "debolezze": ["Acqua, Ghiaccio, Drago"]
+    },
+    {
+        "numero": "330",
+        "nome": "Flygon",
+        "stadio_evolutivo": "Fase Finale",
+        "img_url": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/330.png",
+        "tipo": ["Terra", "Drago"],
+        "debolezze": ["Acqua, Ghiaccio, Drago"]
+    },
+    {
+        "numero": "331",
+        "nome": "Cacnea",
+        "stadio_evolutivo": "Base",
+        "img_url": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/331.png",
+        "tipo": ["Erba"],
+        "debolezze": ["Fuoco, Ghiaccio, Veleno, Volante, Coleottero"]
+    },
+    {
+        "numero": "332",
+        "nome": "Cacturne",
+        "stadio_evolutivo": "Fase Finale",
+        "img_url": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/332.png",
+        "tipo": ["Erba", "Buio"],
+        "debolezze": ["Fuoco, Ghiaccio, Veleno, Volante, Coleottero, Lotta, Folletto"]
+    },
+    {
+        "numero": "333",
+        "nome": "Swablu",
+        "stadio_evolutivo": "Base",
+        "img_url": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/333.png",
+        "tipo": ["Normale", "Volante"],
+        "debolezze": ["Elettrico, Ghiaccio, Roccia"]
+    },
+    {
+        "numero": "334",
+        "nome": "Altaria",
+        "stadio_evolutivo": "Fase Finale",
+        "img_url": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/334.png",
+        "tipo": ["Drago", "Volante"],
+        "debolezze": ["Ghiaccio, Drago, Folletto"]
+    },
+    {
+        "numero": "335",
+        "nome": "Zangoose",
+        "stadio_evolutivo": "Fase Unica",
+        "img_url": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/335.png",
+        "tipo": ["Normale"],
+        "debolezze": ["Lotta"]
+    },
+    {
+        "numero": "336",
+        "nome": "Seviper",
+        "stadio_evolutivo": "Fase Unica",
+        "img_url": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/336.png",
+        "tipo": ["Veleno"],
+        "debolezze": ["Psico, Terra, Psico"]
+    },
+    {
+        "numero": "337",
+        "nome": "Lunatone",
+        "stadio_evolutivo": "Fase Unica",
+        "img_url": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/337.png",
+        "tipo": ["Roccia", "Psico"],
+        "debolezze": ["Buio, Spettro, Erba, Acciaio, Acqua"]
+    },
+    {
+        "numero": "338",
+        "nome": "Solrock",
+        "stadio_evolutivo": "Fase Unica",
+        "img_url": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/338.png",
+        "tipo": ["Roccia", "Psico"],
+        "debolezze": ["Buio, Spettro, Erba, Acciaio, Acqua"]
+    },
+    {
+        "numero": "339",
+        "nome": "Barboach",
+        "stadio_evolutivo": "Base",
+        "img_url": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/339.png",
+        "tipo": ["Acqua", "Terra"],
+        "debolezze": ["Erba"]
+    },
+    {
+        "numero": "340",
+        "nome": "Whiscash",
+        "stadio_evolutivo": "Fase Finale",
+        "img_url": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/340.png",
+        "tipo": ["Acqua", "Terra"],
+        "debolezze": ["Erba"]
+    },
+    {
+        "numero": "341",
+        "nome": "Corphish",
+        "stadio_evolutivo": "Base",
+        "img_url": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/341.png",
+        "tipo": ["Acqua"],
+        "debolezze": ["Elettrico, Erba"]
+    },
+    {
+        "numero": "342",
+        "nome": "Crawdaunt",
+        "stadio_evolutivo": "Fase Finale",
+        "img_url": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/342.png",
+        "tipo": ["Acqua", "Buio"],
+        "debolezze": ["Elettrico, Erba, Lotta, Bug, Folletto"]
+    },
+    {
+        "numero": "343",
+        "nome": "Baltoy",
+        "stadio_evolutivo": "Base",
+        "img_url": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/343.png",
+        "tipo": ["Terra", "Psico"],
+        "debolezze": ["Buio, Spettro, Erba, Ghiaccio, Acqua, Erba"]
+    },
+    {
+        "numero": "344",
+        "nome": "Claydol",
+        "stadio_evolutivo": "Fase Finale",
+        "img_url": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/344.png",
+        "tipo": ["Terra", "Psico"],
+        "debolezze": ["Buio, Spettro, Erba, Ghiaccio, Acqua, Erba"]
+    },
+    {
+        "numero": "345",
+        "nome": "Lileep",
+        "stadio_evolutivo": "Base",
+        "img_url": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/345.png",
+        "tipo": ["Roccia", "Erba"],
+        "debolezze": ["Buio, Spettro, Fuoco, Ghiaccio, Veleno, Acciaio"]
+    },
+    {
+        "numero": "346",
+        "nome": "Cradily",
+        "stadio_evolutivo": "Fase Finale",
+        "img_url": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/346.png",
+        "tipo": ["Roccia", "Erba"],
+        "debolezze": ["Buio, Spettro, Fuoco, Ghiaccio, Veleno, Acciaio"]
+    },
+    {
+        "numero": "347",
+        "nome": "Anorith",
+        "stadio_evolutivo": "Base",
+        "img_url": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/347.png",
+        "tipo": ["Roccia", "Coleottero"],
+        "debolezze": ["Acqua, Roccia, Acciaio"]
+    },
+    {
+        "numero": "348",
+        "nome": "Armaldo",
+        "stadio_evolutivo": "Fase Finale",
+        "img_url": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/348.png",
+        "tipo": ["Roccia", "Coleottero"],
+        "debolezze": ["Acqua, Roccia, Acciaio"]
+    },
+    {
+        "numero": "349",
+        "nome": "Feebas",
+        "stadio_evolutivo": "Base",
+        "img_url": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/349.png",
+        "tipo": ["Acqua"],
+        "debolezze": []
+    },
+    {
+        "numero": "350",
+        "nome": "Milotic",
+        "stadio_evolutivo": "Fase Finale",
+        "img_url": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/350.png",
+        "tipo": ["Acqua"],
+        "debolezze": []
+    },
+    {
+        "numero": "351",
+        "nome": "Castform",
+        "stadio_evolutivo": "Fase Unica",
+        "img_url": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/351.png",
+        "tipo": ["Normale"],
+        "debolezze": []
+    }
+]
