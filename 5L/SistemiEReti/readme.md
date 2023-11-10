@@ -4,8 +4,9 @@
 
 🔭 Topics covered:
 -   WWW
+-   Architettura ISO / OSI
 -   HTTP
 -   FTP
 -   DNS
 -   Mail Box
--   
+-   Crittografia
