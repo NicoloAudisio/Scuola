@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audisio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 50px;
+            color: #333;
+        }
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        input[type="submit"] {
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        button {
+            background-color: #2ecc71;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+            margin-top: 20px;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <form action="http://127.0.0.1:3000" method="GET">
+        <select name="city">
+            <option value="Verzuolo">Verzuolo</option>
+            <option value="Milano">Milano</option>
+            <option value="Torino">Torino</option>
+            <option value="Firenze">Firenze</option>
+            <option value="Bologna">Bologna</option>
+            <option value="Roma">Roma</option>
+            <option value="Napoli">Napoli</option>
+            <option value="Bari">Bari</option>
+            <option value="Messina">Messina</option>
+        </select>
+        <p>Temperatura massima</p>
+        <input type="number" id="quantity" name="max" min="-20" max="70">
+        <p>Temperatura minima</p>
+        <input type="number" id="quantity" name="min" min="-20" max="70">
+        <br/>
+        <br/>
+        <input type="submit" value="INVIA">
+   </form>
+   <button onclick="window.location.href='http://127.0.0.1:3000/temperatures'">sommario temperature</button>
+</body>
+</html>
