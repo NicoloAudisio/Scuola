@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Riepilogo Punteggi</title>
+</head>
+<body>
+    <h1>Riepilogo Punteggi</h1>
+    <ul>
+        <% for(let gioco in punteggi) { %>
+            <li><%= gioco %>: <%= punteggi[gioco] %></li>
+        <% } %>
+    </ul>
+    <p>Il punteggio massimo è <%= massimoPunteggio %> ottenuto nel gioco <%= giocoConPunteggioMassimo %>.</p>
+</body>
+</html>
