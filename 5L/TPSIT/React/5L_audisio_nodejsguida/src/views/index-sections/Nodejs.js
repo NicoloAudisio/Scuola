@@ -185,7 +185,7 @@ function Nodejs() {
           </Row>
           {/* Creazione primo progetto NodeJS */}
           <Row className="justify-content-md-center">
-            <Col className="text-center" lg="8" md="12">
+            <Col className="text-left" lg="8" md="12">
               <br/>
               <br/>
               <h4 className="title">Creazione del primo progetto</h4>
@@ -256,7 +256,7 @@ function Nodejs() {
           </Row>
           {/* Passaggio di una pagina HTML */}
           <Row className="justify-content-md-center">
-            <Col className="text-center" lg="8" md="12">
+            <Col className="text-left" lg="8" md="12">
               <br/>
               <br/>
               <h4 className="title">Passaggio di una pagina HTML</h4>
