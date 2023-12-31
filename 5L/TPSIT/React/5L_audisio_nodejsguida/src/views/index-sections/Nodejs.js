@@ -7,6 +7,9 @@ import {
   Row,
   Col,
   Badge,
+  Carousel,
+  CarouselItem,
+  CarouselIndicators,
 } from "reactstrap";
 
 // core components
@@ -14,6 +17,10 @@ import {
 function Nodejs() {
   const copiahttp = () => {
     navigator.clipboard.writeText('let http = require("http")');
+  };
+
+  const copiaurl = () => {
+    navigator.clipboard.writeText('let url = require("url")');
   };
 
   const copiafs = () => {
@@ -37,6 +44,30 @@ function Nodejs() {
     `);
   };
 
+  const copiamodulo = () => {
+    navigator.clipboard.writeText(`
+      exports.somma =(a,b)=> {
+        return (a+b)
+      }
+      
+      exports.sottrazione =(a,b)=> {
+          return (a-b)
+      }
+      
+      exports.moltiplicazione =(a,b)=> {
+          return (a*b)
+      }
+      
+      exports.divisione =(a,b)=> {
+          return (a/b)
+      }
+      
+      exports.resto =(a,b)=> {
+          return (a%b)
+      }
+    `);
+  };
+
   const copiastart = () => {
     navigator.clipboard.writeText(`
       nodemon Server.js
@@ -55,6 +86,17 @@ function Nodejs() {
     `);
   };
 
+  const copiamodulo1 = () => {
+    navigator.clipboard.writeText(`
+      let http = require("http")
+      let calcolatrice = require("./mioModulo")
+      
+      http.createServer((req, res) => {
+
+      }).listen("3000")
+    `);
+  };
+
   const copiafs1 = () => {
     navigator.clipboard.writeText(`
       let http = require("http")
@@ -62,6 +104,18 @@ function Nodejs() {
       
       http.createServer((req, resp) =>{
         resp.end()
+      }).listen(3000)
+    `);
+  };
+
+  const copiaurl1 = () => {
+    navigator.clipboard.writeText(`
+      let http = require("http")
+      let fs = require("fs")
+      let url = require("url")
+      
+      http.createServer((req, resp) =>{
+        
       }).listen(3000)
     `);
   };
@@ -78,6 +132,28 @@ function Nodejs() {
     `);
   };
 
+  const copiamodulo2 = () => {
+    navigator.clipboard.writeText(`
+      let http = require("http")
+      let calcolatrice = require("./mioModulo")
+      http.createServer((req, res) => {
+        res.end(calcolatrice.somma(5,7).toString())
+      }).listen("3000")
+    `);
+  };
+
+  const copiaurl2 = () => {
+    navigator.clipboard.writeText(`
+      const { readSync } = require("fs")
+      let http = require("http")
+      let url = require("url")
+      
+      http.createServer((req, res) => {
+          let mioURL = url.parse(req.url, true)
+      }).listen("3000")
+    `);
+  };
+
   const copiafs3 = () => {
     navigator.clipboard.writeText(`
       let http = require("http")
@@ -88,6 +164,35 @@ function Nodejs() {
         let contenutoFile = fs.readFileSync("./index.html")
         resp.end()
       }).listen(3000)
+    `);
+  };
+
+  const copiaurl3 = () => {
+    navigator.clipboard.writeText(`
+      const { readSync } = require("fs")
+      let http = require("http")
+      let url = require("url")
+      
+      http.createServer((req, res) => {
+          let mioURL = url.parse(req.url, true)
+          switch (mioURL.path) {
+              case "/":
+                  res.end("HOME PAGE")
+                  break;
+              
+              case "/stella":
+                  res.end("Cane")
+                  break;
+      
+              case "/maia":
+                  res.end("Gatto")
+                  break;
+      
+              default:
+                  res.end("Errore")
+                  break;
+          }
+      }).listen("3000")
     `);
   };
 
@@ -143,6 +248,48 @@ function Nodejs() {
     `);
   };
 
+  const items = [
+    {
+      src: require("assets/img/screenshot_parseHome.png"),
+      altText: "localhost:3000/",
+      caption: "localhost:3000/"
+    },
+    {
+      src: require("assets/img/screenshot_parseCane.png"),
+      altText: "localhost:3000/cane",
+      caption: "localhost:3000/cane"
+    },
+    {
+      src: require("assets/img/screenshot_parsegatto.png"),
+      altText: "localhost:3000/gatto",
+      caption: "localhost:3000/gatto"
+    }
+  ];
+  
+    const [activeIndex, setActiveIndex] = React.useState(0);
+    const [animating, setAnimating] = React.useState(false);
+    const onExiting = () => {
+      setAnimating(true);
+    };
+    const onExited = () => {
+      setAnimating(false);
+    };
+    const next = () => {
+      if (animating) return;
+      const nextIndex = activeIndex === items.length - 1 ? 0 : activeIndex + 1;
+      setActiveIndex(nextIndex);
+    };
+    const previous = () => {
+      if (animating) return;
+      const nextIndex = activeIndex === 0 ? items.length - 1 : activeIndex - 1;
+      setActiveIndex(nextIndex);
+    };
+    const goToIndex = (newIndex) => {
+      if (animating) return;
+      setActiveIndex(newIndex);
+    };
+
+
   return (
     <>
       <div
@@ -158,16 +305,13 @@ function Nodejs() {
                 Nella seguente guida si affrontano i seguenti argomenti:<br/>
               </h5>
               <Badge color="info" className="mr-3 mt-4">
-                Creazione del primo progetto
+                Primo progetto
               </Badge>
               <Badge color="info" className="mr-3 mt-4">
-                Passaggio di una pagina HTML
+                FS
               </Badge>
               <Badge color="info" className="mr-3 mt-4">
                Parse URL
-              </Badge>
-              <Badge color="info" className="mr-3 mt-4">
-                Importazione dei moduli
               </Badge>
               <Badge color="info" className="mr-3 mt-4">
                 CommonJS
@@ -254,15 +398,23 @@ function Nodejs() {
               </Col>
             </Col>
           </Row>
-          {/* Passaggio di una pagina HTML */}
+          {/* FS */}
           <Row className="justify-content-md-center">
             <Col className="text-left" lg="8" md="12">
               <br/>
               <br/>
-              <h4 className="title">Passaggio di una pagina HTML</h4>
+              <h4 className="title">FS</h4>
               <h5 className="description">
-                Per rendere più dinamici le pagine web che si realizzano, si può utilizzare il modulo <i>fs</i> per collegare più pagine tra loro.<br/>
+              Il modulo fs (File System) di Node.js è una funzionalità integrata che permette di interagire con il file system del tuo computer. Questo modulo fornisce tutte le funzioni necessarie per leggere, scrivere e cancellare file sulla macchina locale.<br/>
+              Ecco alcuni punti chiave sul modulo fs di Node.js:<br/>
+              
+              <ul>
+                <li>Lavorare con file e directory: Questa è una delle esigenze fondamentali di un’applicazione full-stack. Gli utenti dell’app potrebbero voler caricare immagini, curriculum o altri file su un server. Allo stesso tempo, l’applicazione potrebbe aver bisogno di leggere i file di configurazione, spostare i file o addirittura modificarne i permessi in modo programmatico.</li> 
+                <li>API sincrone e asincrone: Il modulo fs fornisce diverse API per interagire con i file system senza problemi. La maggior parte delle API sono personalizzabili con opzioni e flag. È anche possibile utilizzarle per eseguire operazioni sia sincrone che asincrone sui file.</li>
+                <li>Moduli di Node.js: I moduli di Node.js sono un insieme di funzionalità disponibili come API che possono essere utilizzate da un programma utente. Ad esempio, esiste il modulo fs per interagire con il file system.</li>
+              </ul>
               </h5>
+              <h5>Per utilizzare il modulo <i>FS </i>si devono seguire i seguenti passaggi:</h5>
               <ul>
                 <li><h5>Creare una cartella</h5></li>
                 <li><h5>Creare un file all’interno della cartella chiamato “<i>Server.js</i>”</h5></li>
@@ -385,7 +537,295 @@ function Nodejs() {
             </Col>
           </Row>
           {/* Parse URL */}
+          <Row className="justify-content-md-center">
+            <Col className="text-left" lg="8" md="12">
+              <br/>
+              <br/>
+              <h4 className="title">Parse URL</h4>
+              <h5 className="description">
+                Il parsing di un URL (Uniform Resource Locator) è un processo che analizza una stringa di URL e la suddivide in componenti specifici1. Questo è utile quando si desidera estrarre informazioni specifiche da un URL, come il protocollo, l’host, il percorso, i parametri di query, ecc.
+              </h5>
+              <ul>
+                <li><h5>Creare una cartella</h5></li>
+                <li><h5>Creare un file all’interno della cartella chiamato “<i>Server.js</i>”</h5></li>
+                <li>
+                  <h5>Importare il modulo http<br/></h5>
+                  <Button color="info" type="button" onClick={copiahttp} size="lg">
+                    let http = require("http")
+                  </Button>
+                </li>
+                <br/>
+                <br/>
+                <li>
+                  <h5>Importare il modulo fs<br/></h5>
+                  <Button color="info" type="button" onClick={copiafs} size="lg">
+                    let fs = require("fs")
+                  </Button>
+                </li>
+                <br/>
+                <br/>
+                <li>
+                  <h5>Importare il modulo url<br/></h5>
+                  <Button color="info" type="button" onClick={copiaurl} size="lg">
+                    let url = require("url")
+                  </Button>
+                </li>
+                <li>
+                  <h5>Si ricrea la struttura base vista in precedenza, aggiungendo l'importazione del modulo <i>url</i>:</h5>
+                  <Button color="info" type="button" onClick={copiaurl1} size="lg">
+                  let http = require("http")<br/>
+                  let fs = require("fs")<br/>
+                  let url = require("url")<br/>
 
+                  http.createServer((req, resp) =&gt;&#123;<br/>
+                  <br/>
+                  &#125;).listen(3000)<br/>
+                  </Button>
+                </li>
+                <br/>
+                <br/>
+                <li><h5>Si deve salvare all'interno di una variabile l'url, tramite la funzione <i>parse</i>:</h5></li>
+                <Button color="info" type="button" onClick={copiaurl2} size="lg">
+                  let http = require("http")<br/>
+                  let fs = require("fs")<br/>
+                  let url = require("url")<br/>
+
+                  http.createServer((req, resp) =&gt;&#123;<br/>
+                    let mioURL = url.parse(req.url, true)<br/>
+                  &#125;).listen(3000)<br/>
+                  </Button>
+                <br/>
+                <br/>
+                <li><h5>Infine mediante uno switch si inseriscono i casi possibile del parse:</h5></li>
+                <Button color="info" type="button" onClick={copiaurl3} size="lg">
+                  let http = require("http")<br/>
+                  let fs = require("fs")<br/>
+                  let url = require("url")<br/>
+
+                  http.createServer((req, resp) =&gt;&#123;<br/>
+                    let mioURL = url.parse(req.url, true)<br/>
+                    switch (mioURL.path) &#123;<br/>
+                      case "/":<br/>
+                          res.end("HOME PAGE")<br/>
+                          break;<br/>
+                          <br/>
+                      case "/stella":<br/>
+                          res.end("Cane")<br/>
+                          break;<br/>
+                          <br/>
+                      case "/maia":<br/>
+                          res.end("gatto")<br/>
+                          break;<br/>
+                          <br/>
+                      default:<br/>
+                          res.end("Errore")<br/>
+                          break;<br/>
+                    &#125;<br/>
+                  &#125;).listen(3000)<br/>
+                  </Button>
+                <br/>
+                <br/>
+                <br/>
+                <h5>Esempio completo</h5>
+                <h5 className="description">Server.js</h5>
+                <Button color="info" type="button" onClick={copiaurl3} size="lg">
+                  let http = require("http")<br/>
+                  let fs = require("fs")<br/>
+                  let url = require("url")<br/>
+
+                  http.createServer((req, resp) =&gt;&#123;<br/>
+                    let mioURL = url.parse(req.url, true)<br/>
+                    switch (mioURL.path) &#123;<br/>
+                      case "/":<br/>
+                          res.end("HOME PAGE")<br/>
+                          break;<br/>
+                          <br/>
+                      case "/stella":<br/>
+                          res.end("Cane")<br/>
+                          break;<br/>
+                          <br/>
+                      case "/maia":<br/>
+                          res.end("gatto")<br/>
+                          break;<br/>
+                          <br/>
+                      default:<br/>
+                          res.end("Errore")<br/>
+                          break;<br/>
+                    &#125;<br/>
+                  &#125;).listen(3000)<br/>
+                  </Button>
+                <br/>
+                <br/>
+              </ul>
+              <br/>
+              <br/>
+              <Row className="justify-content-center">
+                <Col lg="12" md="12">
+                  <Carousel
+                    activeIndex={activeIndex}
+                    next={next}
+                    previous={previous}
+                  >
+                    <CarouselIndicators
+                      items={items}
+                      activeIndex={activeIndex}
+                      onClickHandler={goToIndex}
+                    />
+                    {items.map((item) => {
+                      return (
+                        <CarouselItem
+                          onExiting={onExiting}
+                          onExited={onExited}
+                          key={item.src}
+                        >
+                          <img src={item.src} alt={item.altText} />
+                          <div className="carousel-caption d-none d-md-block">
+                            <h5>{item.caption}</h5>
+                          </div>
+                        </CarouselItem>
+                      );
+                    })}
+                    <a
+                      className="carousel-control-prev"
+                      data-slide="prev"
+                      href="#pablo"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        previous();
+                      }}
+                      role="button"
+                    >
+                      <i className="now-ui-icons arrows-1_minimal-left"></i>
+                    </a>
+                    <a
+                      className="carousel-control-next"
+                      data-slide="next"
+                      href="#pablo"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        next();
+                      }}
+                      role="button"
+                    >
+                      <i className="now-ui-icons arrows-1_minimal-right"></i>
+                    </a>
+                  </Carousel>
+                </Col>
+              </Row>
+            </Col>
+          </Row>
+          {/* CommonJS */}
+          <Row className="justify-content-md-center">
+            <Col className="text-left" lg="8" md="12">
+              <br/>
+              <br/>
+              <h4 className="title">CommonJs</h4>
+              <h5 className="description">
+                CommonJS è un formato di modulo popolare utilizzato in Node.js. È stato uno dei primi tentativi di standardizzare un sistema di moduli JavaScript sul lato server. Ecco alcuni punti chiave su CommonJS:
+                <ul>
+                  <li>require() e module.exports: CommonJS introduce le funzioni <i>require()</i> e <i>module.exports</i> per importare ed esportare moduli1. Ad esempio, per importare un modulo in CommonJS, si utilizza <i>require()</i>, e per esportare funzioni o oggetti da un modulo, si utilizza <i>module.exports</i>.</li>
+                  <li>Sincrono: CommonJS carica i moduli in modo sincrono, il che significa che quando si utilizza <i>require()</i>, l’esecuzione del codice si blocca fino a quando il modulo non viene caricato. Questo è ideale per lo scripting lato server, dove le operazioni I/O sono più veloci e non c’è bisogno di preoccuparsi del blocco dell’interfaccia utente.</li>
+                  <li>Compatibilità con ES Modules: Node.js supporta sia <i>CommonJS</i> che <i>ES Modules (ESM)</i>. Tuttavia, ci sono alcune differenze tra i due. Ad esempio, <i>require()</i> non è supportato in <i>ESM</i>, e viceversa, import e export non sono supportati in <i>CommonJS</i>. Inoltre, <i>Node.js</i> interpreta i file .js come <i>CommonJS</i> a meno che non siano specificati diversamente nel campo type del file package.json.</li>
+                </ul>
+              </h5>
+              <h5>Per utilizzare il modulo <i>FS </i>si devono seguire i seguenti passaggi:</h5>
+              <ul>
+                <li><h5>Creare una cartella</h5></li>
+                <li><h5>Creare un file all’interno della cartella chiamato “<i>Server.js</i>”</h5></li>
+                <li><h5>Creare un file all’interno della cartella chiamato “<i>mioModulo.js</i>”</h5></li>
+                <li>
+                  <h5>Creazione del modulo sul file <i>mioModulo.js</i><br/></h5>
+                  <Button color="info" type="button" onClick={copiamodulo} size="lg">
+                    exports.somma =(a,b)=&gt;&#123;<br/>
+                        return (a+b)<br/>
+                    &#125;<br/>
+                    <br/>
+                    exports.sottrazione =(a,b)=&gt;&#123;<br/>
+                        return (a-b)<br/>
+                    &#125;<br/>
+                    <br/>
+                    exports.moltiplicazione =(a,b)=&gt;&#123;<br/>
+                        return (a*b)<br/>
+                    &#125;<br/>
+                    <br/>
+                    exports.divisione =(a,b)=&gt;&#123;<br/>
+                        return (a/b)<br/>
+                    &#125;<br/>
+                    <br/>
+                    exports.resto =(a,b)=&gt;&#123;<br/>
+                        return (a%b)<br/>
+                    &#125;<br/>
+                  </Button>
+                </li>
+                <li>
+                  <h5>Importare del modulo creato all'interno del file <i>Server.js</i><br/></h5>
+                  <Button color="info" type="button" onClick={copiamodulo1} size="lg">
+                    let http = require("http")<br/>
+                    let calcolatrice = require("./mioModulo")<br/>
+                    <br/>
+                    http.createServer((req, res) =&gt;&#123;<br/>
+                    &#125;).listen("3000")<br/>
+                  </Button>
+                </li>
+                <br/>
+                <li><h5>Si eseguono le funzioni appena create nel modulo, per esempio la somma:</h5></li>
+                <Button color="info" type="button" onClick={copiamodulo2} size="lg">
+                    let http = require("http")<br/>
+                    let calcolatrice = require("./mioModulo")<br/>
+                    <br/>
+                    http.createServer((req, res) =&gt;&#123;<br/>
+                    res.end(minni.somma(5,7).toString())<br/>
+                    &#125;).listen("3000")<br/>
+                </Button>
+                <br/>
+                <br/>
+                <br/>
+                <h5>Esempio completo</h5>
+                <h5 className="description">Server.js</h5>
+                <Button color="info" type="button" onClick={copiamodulo2} size="lg">
+                    let http = require("http")<br/>
+                    let calcolatrice = require("./mioModulo")<br/>
+                    <br/>
+                    http.createServer((req, res) =&gt;&#123;<br/>
+                    res.end(minni.somma(5,7).toString())<br/>
+                    &#125;).listen("3000")<br/>
+                </Button>
+                <br/>
+                <br/>
+                <h5 className="description">mioModulo.js</h5>
+                <Button color="info" type="button" onClick={copiamodulo} size="lg">
+                    exports.somma =(a,b)=&gt;&#123;<br/>
+                        return (a+b)<br/>
+                    &#125;<br/>
+                    <br/>
+                    exports.sottrazione =(a,b)=&gt;&#123;<br/>
+                        return (a-b)<br/>
+                    &#125;<br/>
+                    <br/>
+                    exports.moltiplicazione =(a,b)=&gt;&#123;<br/>
+                        return (a*b)<br/>
+                    &#125;<br/>
+                    <br/>
+                    exports.divisione =(a,b)=&gt;&#123;<br/>
+                        return (a/b)<br/>
+                    &#125;<br/>
+                    <br/>
+                    exports.resto =(a,b)=&gt;&#123;<br/>
+                        return (a%b)<br/>
+                    &#125;<br/>
+                  </Button>
+              </ul>
+              <br/>
+              <br/>
+              <Col sm="12">
+                <img
+                  alt="..."
+                  className="rounded"
+                  src={require("assets/img/screenshot_modulo.png")}
+                ></img>
+              </Col>
+            </Col>
+          </Row>
 
 
 

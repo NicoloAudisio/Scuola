@@ -7,7 +7,6 @@ import React from "react";
 // core components
 import IndexNavbar from "components/Navbars/IndexNavbar.js";
 import IndexHeader from "components/Headers/IndexHeader.js";
-import DarkFooter from "components/Footers/DarkFooter.js";
 
 // sections for this page
 import Introduzione from "./index-sections/Introduzione.js";
@@ -20,8 +19,8 @@ import Javascript from "./index-sections/Javascript.js";
 import Carousel from "./index-sections/Carousel.js";
 import NucleoIcons from "./index-sections/NucleoIcons.js";
 import CompleteExamples from "./index-sections/CompleteExamples.js";
-import SignUp from "./index-sections/SignUp.js";
 import Nodejs from "./index-sections/Nodejs.js";
+import ProfilePage from "components/Headers/ProfilePage.js";
 
 function Index() {
   React.useEffect(() => {
@@ -52,9 +51,8 @@ function Index() {
           <Carousel />
           <NucleoIcons />
           <CompleteExamples />
-          <SignUp />
+          <ProfilePage />
         </div>
-        <DarkFooter />
       </div>
     </>
   );

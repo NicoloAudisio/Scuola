@@ -31,8 +31,7 @@ function Introduzione() {
           <Col className="text-center" lg="15" md="15">
               <h1 className="title">NodeJs</h1>
               <h5 className="description">
-              NodeJS è un framwork che permette la programmazione lato server, che può essere utile per unificare la stessa pagina web su più dispositivi, per esempio se si parla di Amazon, tutte le pagine che vengono aperte vedere vedere la quantità disponibile aggiornata in automatica in base agli acquisti che vengono fatti.
-              La funzione di PHP è quella di inviare una pagina HTML, CSS e JS al computer che effettua la richiesta, mentre Node JS serve per realizzare un servizio.
+              Node.js è un ambiente di runtime JavaScript open-source e multipiattaforma che esegue il motore JavaScript V8. È noto per le sue prestazioni e viene utilizzato in vari tipi di progetti. Node.js gestisce le operazioni di I/O in modo asincrono, evitando il blocco del codice. Questo permette a Node.js di gestire molte connessioni simultanee senza la necessità di gestire la concorrenza dei thread. Inoltre, Node.js ha reso possibile per gli sviluppatori frontend scrivere codice lato server. Infine, Node.js supporta i nuovi standard ECMAScript senza dover attendere l’aggiornamento dei browser da parte degli utenti.
               </h5>
           </Col>
           <br/>

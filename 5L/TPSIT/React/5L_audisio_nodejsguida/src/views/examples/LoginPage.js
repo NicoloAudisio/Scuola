@@ -1,4 +1,5 @@
 import React from "react";
+import {useNavigate} from 'react-router-dom';
 
 // reactstrap components
 import {
@@ -17,12 +18,17 @@ import {
 } from "reactstrap";
 
 // core components
-import ExamplesNavbar from "components/Navbars/ExamplesNavbar.js";
+import IndexNavbar from "components/Navbars/IndexNavbar";
 import TransparentFooter from "components/Footers/TransparentFooter.js";
 
 function LoginPage() {
+  const [username, setUsername] = React.useState("");
+  const [password, setPassword] = React.useState("");
   const [firstFocus, setFirstFocus] = React.useState(false);
   const [lastFocus, setLastFocus] = React.useState(false);
+  const [errorMessage, setErrorMessage] = React.useState("");
+  const navigate = useNavigate()
+  
   React.useEffect(() => {
     document.body.classList.add("login-page");
     document.body.classList.add("sidebar-collapse");
@@ -34,30 +40,41 @@ function LoginPage() {
       document.body.classList.remove("sidebar-collapse");
     };
   }, []);
+  
+  const handleLogin = (e) => {
+    e.preventDefault();
+    if(username === "nicoloaudisio" && password === "prova123") {
+      navigate("/index");
+    } else {
+      setErrorMessage("Invalid username or password");
+    }
+  }
+  
   return (
     <>
-      <ExamplesNavbar />
+      <IndexNavbar/>
       <div className="page-header clear-filter" filter-color="blue">
         <div
           className="page-header-image"
           style={{
-            backgroundImage: "url(" + require("assets/img/login.jpg") + ")"
+            backgroundImage: "url(" + require("assets/img/code_bakcground.jpg") + ")"
           }}
         ></div>
         <div className="content">
           <Container>
             <Col className="ml-auto mr-auto" md="4">
               <Card className="card-login card-plain">
-                <Form action="" className="form" method="">
+                <Form action="" className="form" method="" onSubmit={handleLogin}>
                   <CardHeader className="text-center">
                     <div className="logo-container">
                       <img
                         alt="..."
-                        src={require("assets/img/now-logo.png")}
+                        src={require("assets/img/nodejs_logomini.png")}
                       ></img>
                     </div>
                   </CardHeader>
                   <CardBody>
+                  {errorMessage && <p>{errorMessage}</p>}
                     <InputGroup
                       className={
                         "no-border input-lg" +
@@ -70,10 +87,12 @@ function LoginPage() {
                         </InputGroupText>
                       </InputGroupAddon>
                       <Input
-                        placeholder="First Name..."
+                        placeholder="Username..."
                         type="text"
                         onFocus={() => setFirstFocus(true)}
                         onBlur={() => setFirstFocus(false)}
+                        value={username}
+                        onChange={(e) => setUsername(e.target.value)}
                       ></Input>
                     </InputGroup>
                     <InputGroup
@@ -88,10 +107,12 @@ function LoginPage() {
                         </InputGroupText>
                       </InputGroupAddon>
                       <Input
-                        placeholder="Last Name..."
-                        type="text"
+                        placeholder="Password..."
+                        type="password"
                         onFocus={() => setLastFocus(true)}
                         onBlur={() => setLastFocus(false)}
+                        value={password}
+                        onChange={(e) => setPassword(e.target.value)}
                       ></Input>
                     </InputGroup>
                   </CardBody>
@@ -100,34 +121,11 @@ function LoginPage() {
                       block
                       className="btn-round"
                       color="info"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
                       size="lg"
+                      type="submit"
                     >
-                      Get Started
+                      Login
                     </Button>
-                    <div className="pull-left">
-                      <h6>
-                        <a
-                          className="link"
-                          href="#pablo"
-                          onClick={(e) => e.preventDefault()}
-                        >
-                          Create Account
-                        </a>
-                      </h6>
-                    </div>
-                    <div className="pull-right">
-                      <h6>
-                        <a
-                          className="link"
-                          href="#pablo"
-                          onClick={(e) => e.preventDefault()}
-                        >
-                          Need Help?
-                        </a>
-                      </h6>
-                    </div>
                   </CardFooter>
                 </Form>
               </Card>
@@ -141,3 +139,4 @@ function LoginPage() {
 }
 
 export default LoginPage;
+
