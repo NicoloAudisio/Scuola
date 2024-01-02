@@ -19,6 +19,10 @@ function Nodejs() {
     navigator.clipboard.writeText('let http = require("http")');
   };
 
+  const copiainit = () => {
+    navigator.clipboard.writeText('npm init');
+  };
+
   const copiaurl = () => {
     navigator.clipboard.writeText('let url = require("url")');
   };
@@ -63,6 +67,30 @@ function Nodejs() {
       }
       
       exports.resto =(a,b)=> {
+          return (a%b)
+      }
+    `);
+  };
+
+  const copiamoduloEs = () => {
+    navigator.clipboard.writeText(`
+      export const somma =(a,b)=> {
+        return (a+b)
+      }
+      
+      export const sottrazione =(a,b)=> {
+          return (a-b)
+      }
+      
+      export const moltiplicazione =(a,b)=> {
+          return (a*b)
+      }
+      
+      export const divisione =(a,b)=> {
+          return (a/b)
+      }
+      
+      export const resto =(a,b)=> {
           return (a%b)
       }
     `);
@@ -129,6 +157,17 @@ function Nodejs() {
         resp.setHeader('Content-Type', 'text/html')
         resp.end()
       }).listen(3000)
+    `);
+  };
+
+  const copiamoduloEs2 = () => {
+    navigator.clipboard.writeText(`
+      import http from "http"
+      import {somma, sottrazione} from "./mioModulo.js"
+      
+      http.createServer((req, res) => {
+          res.end(somma(7,5).toString())
+      }).listen("3000")
     `);
   };
 
@@ -219,6 +258,24 @@ function Nodejs() {
           let contenutoFile = fs.readFileSync("./index.html")
           resp.end(contenutoFile)
       }).listen(3000)
+    `);
+  };
+
+  const copiapackage = () => {
+    navigator.clipboard.writeText(`
+      {
+        "name": "audisio",
+        "version": "1.0.0",
+        "description": "",
+        "type": "module",
+        "main": "server.js",
+        "scripts": {
+          "test": "echo \"Error: no test specified\" && exit 1",
+          "start": "node server.js"
+        },
+        "author": "",
+        "license": "ISC"
+      }
     `);
   };
 
@@ -728,7 +785,7 @@ function Nodejs() {
                   <li>Compatibilità con ES Modules: Node.js supporta sia <i>CommonJS</i> che <i>ES Modules (ESM)</i>. Tuttavia, ci sono alcune differenze tra i due. Ad esempio, <i>require()</i> non è supportato in <i>ESM</i>, e viceversa, import e export non sono supportati in <i>CommonJS</i>. Inoltre, <i>Node.js</i> interpreta i file .js come <i>CommonJS</i> a meno che non siano specificati diversamente nel campo type del file package.json.</li>
                 </ul>
               </h5>
-              <h5>Per utilizzare il modulo <i>FS </i>si devono seguire i seguenti passaggi:</h5>
+              <h5>Per utilizzare i moduli tramite <i>CommonJs</i> bisogna seguire i seguenti passaggi:</h5>
               <ul>
                 <li><h5>Creare una cartella</h5></li>
                 <li><h5>Creare un file all’interno della cartella chiamato “<i>Server.js</i>”</h5></li>
@@ -826,7 +883,184 @@ function Nodejs() {
               </Col>
             </Col>
           </Row>
+          {/* EsModules */}
+          <Row className="justify-content-md-center">
+            <Col className="text-left" lg="8" md="12">
+              <br/>
+              <br/>
+              <h4 className="title">EsModules</h4>
+              <h5 className="description">
+              I moduli ECMAScript (ES modules) sono il formato standard ufficiale per impacchettare il codice JavaScript per la riutilizzazione1. Ecco alcuni punti chiave su ES modules:
+                <ul>
+                  <li>Import ed export: I moduli ES sono definiti utilizzando una varietà di dichiarazioni di importazione ed esportazione. Ad esempio, per esportare una funzione da un modulo ES, si utilizza <i>export</i>, e per importare funzioni o oggetti da un modulo, si utilizza <i>import</i>.</li>
+                  <li>Asincrono: A differenza di CommonJS, i moduli ES caricano i moduli in modo asincrono, il che significa che l’esecuzione del codice non si blocca quando si utilizza <i>import</i>.</li>
+                  <li>Compatibilità con CommonJS: Node.js supporta sia CommonJS che ES Modules (ESM). Tuttavia, ci sono alcune differenze tra i due. Ad esempio, <i>import</i> e <i>export</i> non sono supportati in CommonJS, e viceversa, <i>require()</i> non è supportato in ESM. Inoltre, Node.js interpreta i file <i>.mjs</i> come ES modules.</li>
+                </ul>
+              </h5>
+              <h5>Per utilizzare i moduli tramite <i>EsModules</i> bisogna seguire i seguenti passaggi:</h5>
+              <ul>
+                <li><h5>Creare una cartella</h5></li>
+                <li><h5>Creare un file all’interno della cartella chiamato “<i>Server.js</i>”</h5></li>
+                <li><h5>Creare un file all’interno della cartella chiamato “<i>mioModulo.js</i>”</h5></li>
+                <li>
+                  <h5>Creazione del modulo sul file <i>mioModulo.js</i><br/></h5>
+                  <Button color="info" type="button" onClick={copiamodulo} size="lg">
+                    exports.somma =(a,b)=&gt;&#123;<br/>
+                        return (a+b)<br/>
+                    &#125;<br/>
+                    <br/>
+                    exports.sottrazione =(a,b)=&gt;&#123;<br/>
+                        return (a-b)<br/>
+                    &#125;<br/>
+                    <br/>
+                    exports.moltiplicazione =(a,b)=&gt;&#123;<br/>
+                        return (a*b)<br/>
+                    &#125;<br/>
+                    <br/>
+                    exports.divisione =(a,b)=&gt;&#123;<br/>
+                        return (a/b)<br/>
+                    &#125;<br/>
+                    <br/>
+                    exports.resto =(a,b)=&gt;&#123;<br/>
+                        return (a%b)<br/>
+                    &#125;<br/>
+                  </Button>
+                </li>
+                <br/>
+                <li><h5>Si eseguono le funzioni appena create nel modulo, per esempio la somma:</h5></li>
+                <Button color="info" type="button" onClick={copiamoduloEs2} size="lg">
+                    import http from "http"<br/>
+                    import &#123;somma, sottrazione&#125; from "./mioModulo.js"<br/>
 
+                    http.createServer((req, res) =&gt;&#123;<br/>
+                        res.end(somma(7,5).toString())<br/>
+                    &#125;).listen("3000")<br/>
+                </Button>
+                <br/>
+                <br/>
+                <li>
+                  <h5>Creazione del file <i>package.json</i>.<br/></h5>
+                  <Button color="info" type="button" onClick={copiainit} size="lg">
+                    npm init
+                  </Button>
+                </li>
+                <br/>
+                <br/>
+                <li><h5>Modifica al file <i>package.json</i><br/>Si aggiunge tramite il tag <i>"type: "module";</i></h5></li>
+                <Button color="info" type="button" onClick={copiapackage} size="lg">
+                  &#123;
+                    "name": "audisio",<br/>
+                    "version": "1.0.0",<br/>
+                    "description": "",<br/>
+                    "type": "module",<br/>
+                    "main": "server.js", <br/>
+                    "scripts": &#123;<br/>
+                      "test": "echo \"Error: no test specified\" && exit 1",<br/>
+                      "start": "node server.js"<br/>
+                    &#125;,<br/>
+                    "author": "",<br/>
+                    "license": "ISC"
+                  &#125;
+                </Button>
+                <br/>
+                <br/>
+                <br/>
+                <h5>Esempio completo</h5>
+                <h5 className="description">Server.js</h5>
+                <Button color="info" type="button" onClick={copiamoduloEs2} size="lg">
+                    import http from "http"<br/>
+                    import &#123;somma, sottrazione&#125; from "./mioModulo.js"<br/>
+
+                    http.createServer((req, res) =&gt;&#123;<br/>
+                        res.end(somma(7,5).toString())<br/>
+                    &#125;).listen("3000")<br/>
+                </Button>
+                <br/>
+                <br/>
+                <h5 className="description">mioModulo.js</h5>
+                <Button color="info" type="button" onClick={copiamoduloEs} size="lg">
+                    export const somma =(a,b)=&gt;&#123;<br/>
+                        return (a+b)<br/>
+                    &#125;<br/>
+                    <br/>
+                    export const sottrazione =(a,b)=&gt;&#123;<br/>
+                        return (a-b)<br/>
+                    &#125;<br/>
+                    <br/>
+                    export const moltiplicazione =(a,b)=&gt;&#123;<br/>
+                        return (a*b)<br/>
+                    &#125;<br/>
+                    <br/>
+                    export const divisione =(a,b)=&gt;&#123;<br/>
+                        return (a/b)<br/>
+                    &#125;<br/>
+                    <br/>
+                    export const resto =(a,b)=&gt;&#123;<br/>
+                        return (a%b)<br/>
+                    &#125;<br/>
+                  </Button>
+                <br/>
+                <br/>
+                <h5 className="description">package.json</h5>
+                <Button color="info" type="button" onClick={copiapackage} size="lg">
+                  &#123;
+                      "name": "audisio",<br/>
+                      "version": "1.0.0",<br/>
+                      "description": "",<br/>
+                      "type": "module",<br/>
+                      "main": "server.js", <br/>
+                      "scripts": &#123;<br/>
+                        "test": "echo \"Error: no test specified\" && exit 1",<br/>
+                        "start": "node server.js"<br/>
+                      &#125;,<br/>
+                      "author": "",<br/>
+                      "license": "ISC"
+                    &#125;
+                </Button>
+              </ul>
+              <br/>
+              <br/>
+              <Col sm="12">
+                <img
+                  alt="..."
+                  className="rounded"
+                  src={require("assets/img/screenshot_modulo.png")}
+                ></img>
+              </Col>
+            </Col>
+          </Row>
+          {/* Async / Await */}
+          <Row className="justify-content-md-center">
+            <Col className="text-left" lg="8" md="12">
+              <br/>
+              <br/>
+              <h4 className="title">Async / Await</h4>
+              <h5 className="description">
+                Descrizione
+              </h5>
+              <h5>Titolo:</h5>
+              <ul>
+                <li>1</li>
+                <li>
+                  <h5>Pulsante 1<br/></h5>
+                  <Button color="info" type="button" onClick={copiahttp} size="lg">
+                    Testo pulsante 1
+                  </Button>
+                </li>
+                <br/>
+                <br/>
+              </ul>
+              <br/>
+              <br/>
+              <Col sm="12">
+                <img
+                  alt="..."
+                  className="rounded"
+                  src={require("assets/img/screenshot_fs.png")}
+                ></img>
+              </Col>
+            </Col>
+          </Row>
 
 
 

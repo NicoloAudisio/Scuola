@@ -1,13 +1,8 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import ScrollToTopButton from "components/ScrollPage/ScrollToTop";
 // reactstrap components
 import {
-  Button,
   Collapse,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
-  UncontrolledDropdown,
   NavbarBrand,
   Navbar,
   NavItem,
@@ -54,13 +49,14 @@ function IndexNavbar() {
         <Container>
           <div className="navbar-translate">
             <NavbarBrand
-              href="#"
+              href=""
               id="navbar-brand"
+              onClick={() => <ScrollToTopButton/>}
             >
               NodeJS
             </NavbarBrand>
             <UncontrolledTooltip target="#navbar-brand">
-              Audisio Nicolò
+              Torna su
             </UncontrolledTooltip>
             <button
               className="navbar-toggler navbar-toggler"
@@ -101,7 +97,7 @@ function IndexNavbar() {
                   <p className="d-lg-none d-xl-none">GitHub</p>
                 </NavLink>
                 <UncontrolledTooltip target="#twitter-tooltip">
-                  Follow us on GitHub
+                  GitHub
                 </UncontrolledTooltip>
               </NavItem>
               <NavItem>
@@ -114,7 +110,7 @@ function IndexNavbar() {
                   <p className="d-lg-none d-xl-none">Facebook</p>
                 </NavLink>
                 <UncontrolledTooltip target="#facebook-tooltip">
-                  Like us on Facebook
+                  Facebook
                 </UncontrolledTooltip>
               </NavItem>
               <NavItem>
@@ -127,7 +123,7 @@ function IndexNavbar() {
                   <p className="d-lg-none d-xl-none">Instagram</p>
                 </NavLink>
                 <UncontrolledTooltip target="#instagram-tooltip">
-                  Follow us on Instagram
+                  Instagram
                 </UncontrolledTooltip>
               </NavItem>
             </Nav>
