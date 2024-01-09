@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .input-container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        input, button {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+        }
+        button, .button {
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover, .button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="/punteggi" method="POST">
+            <div class="input-container">
+                <div>
+                    <label for="gioco">Nome del videogioco:</label><br>
+                    <input type="text" id="gioco" name="gioco">
+                </div>
+                <div>
+                    <label for="punteggio">Punteggio:</label><br>
+                    <input type="number" id="punteggio" name="punteggio">
+                </div>
+            </div>
+            <br/>
+            <button type="submit">Invia</button>
+        </form>
+        <br/>
+       <button> <a href="/riepilogo" class="button">Vai al riepilogo</a></button>
+    </div>
+</body>
+</html>

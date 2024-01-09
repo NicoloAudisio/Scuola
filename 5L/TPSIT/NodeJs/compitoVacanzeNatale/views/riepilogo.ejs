@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+            margin-bottom: 10px;
+        }
+        button {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+        }
+        button, .button {
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover, .button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Riepilogo dei punteggi</h1>
+        <ul>
+            <% for(let gioco in punteggi) { %>
+                <li><%= gioco %>: <%= punteggi[gioco] %></li>
+            <% } %>
+        </ul>
+        <h2>Videogioco con il punteggio massimo</h2>
+        <p><%= maxGioco %> con un punteggio di <%= maxPunteggio %></p>
+        <br/>
+        <button> <a href="/" class="button">Vai al form</a></button>
+    </div>
+</body>
+</html>
