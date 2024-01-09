@@ -53,7 +53,7 @@ function IndexNavbar() {
               id="navbar-brand"
               onClick={() => <ScrollToTopButton/>}
             >
-              NodeJS
+              Sito appunti audisio
             </NavbarBrand>
             <UncontrolledTooltip target="#navbar-brand">
               Torna su

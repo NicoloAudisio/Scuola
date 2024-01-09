@@ -43,7 +43,7 @@ function LoginPage() {
   
   const handleLogin = (e) => {
     e.preventDefault();
-    if(username === "nicoloaudisio" && password === "prova123") {
+    if(username === "nicoloAudisio" && password === "rivoira23") {
       navigate("/index");
     } else {
       setErrorMessage("Invalid username or password");

@@ -125,6 +125,16 @@ function Nodejs() {
     `);
   };
 
+  const copiaasync = () => {
+    navigator.clipboard.writeText(`
+      const somma = async()=>{
+        await fetch('https://v2.jokeapi.dev/joke/Programming?type=single')
+        .then(res => res.json())
+        .then(json => console.log(json.joke))
+      }
+    `);
+  };
+
   const copiafs1 = () => {
     navigator.clipboard.writeText(`
       let http = require("http")
@@ -375,6 +385,9 @@ function Nodejs() {
               </Badge>
               <Badge color="info" className="mr-3 mt-4">
                 EsModules
+              </Badge>
+              <Badge color="info" className="mr-3 mt-4">
+                Ejs
               </Badge>
               <Badge color="info" className="mr-3 mt-4">
                 Async / Await
@@ -1036,15 +1049,27 @@ function Nodejs() {
               <br/>
               <h4 className="title">Async / Await</h4>
               <h5 className="description">
-                Descrizione
-              </h5>
-              <h5>Titolo:</h5>
-              <ul>
-                <li>1</li>
+                In Node.js, <i>async</i> e <i>await</i> sono utilizzati per gestire le operazioni asincrone. Sono un modo più pulito e leggibile per gestire le promesse.
+                <ul>
                 <li>
-                  <h5>Pulsante 1<br/></h5>
-                  <Button color="info" type="button" onClick={copiahttp} size="lg">
-                    Testo pulsante 1
+                  Async: La parola chiave <i>async</i> viene utilizzata per dichiarare una funzione come asincrona. Le funzioni asincrone restituiscono sempre una promessa, anche se non si scrive esplicitamente per farlo. Questo significa che è possibile utilizzare il metodo <i>.then()</i> o <i>.catch()</i> con una funzione asincrona.
+                </li>
+                <li>
+                  Await: La parola chiave <i>await</i> viene utilizzata all’interno di una funzione asincrona per attendere che una promessa sia risolta o rifiutataawait blocca l’esecuzione del codice fino a quando la promessa non è risolta.
+                </li>
+                </ul>
+              </h5>
+              <ul>
+                <li><h5>Creare una cartella</h5></li>
+                <li><h5>Creare un file all’interno della cartella chiamato “<i>Server.js</i>”</h5></li>
+                <li>
+                  <h5>Esempio:<br/></h5>
+                  <Button color="info" type="button" onClick={copiaasync} size="lg">
+                    const somma = async()=&gt;&#123;<br/>
+                        await fetch('https://v2.jokeapi.dev/joke/Programming?type=single')<br/>
+                        .then(res =&gt; res.json())<br/>
+                        .then(json =&gt; console.log(json.joke))<br/>
+                    &#125;<br/>
                   </Button>
                 </li>
                 <br/>
@@ -1052,111 +1077,8 @@ function Nodejs() {
               </ul>
               <br/>
               <br/>
-              <Col sm="12">
-                <img
-                  alt="..."
-                  className="rounded"
-                  src={require("assets/img/screenshot_fs.png")}
-                ></img>
-              </Col>
             </Col>
           </Row>
-
-
-
-          {/* <br></br>
-          <br></br>
-          <br></br>
-          <Row className="text-center mt-5">
-            <Col className="ml-auto mr-auto" md="8">
-              <h2>Want more?</h2>
-              <h5 className="description">
-                We're going to launch{" "}
-                <a
-                  href="http://demos.creative-tim.com/now-ui-kit-pro-react/#/presentation?ref=nukr-index-page"
-                  onClick={(e) => e.preventDefault()}
-                >
-                  Now UI Kit PRO React
-                </a>
-                . It will have huge number of components, sections and example
-                pages so you can start your development with a badass Bootstrap
-                4 UI Kit.
-              </h5>
-            </Col>
-            <Col md="12">
-              <Button
-                className="btn-neutral btn-round"
-                color="default"
-                href="http://creative-tim.com/product/now-ui-kit-pro-react?ref=nukr-index-page"
-                size="lg"
-                target="_blank"
-              >
-                <i className="now-ui-icons arrows-1_share-66 mr-1"></i>
-                Upgrade to PRO
-              </Button>
-            </Col>
-          </Row>
-          <br></br>
-          <br></br>
-          <Row className="justify-content-md-center sharing-area text-center">
-            <Col className="text-center" lg="8" md="12">
-              <h3>Thank you for supporting us!</h3>
-            </Col>
-            <Col className="text-center" lg="8" md="12">
-              <Button
-                className="btn-neutral btn-icon btn-round"
-                color="twitter"
-                href="https://www.twitter.com/creativetim?ref=creativetim"
-                id="tooltip86114138"
-                size="lg"
-                target="_blank"
-              >
-                <i className="fab fa-twitter"></i>
-              </Button>
-              <UncontrolledTooltip delay={0} target="tooltip86114138">
-                Follow us
-              </UncontrolledTooltip>
-              <Button
-                className="btn-neutral btn-icon btn-round"
-                color="facebook"
-                href="https://www.facebook.com/creativetim?ref=creativetim"
-                id="tooltip735272548"
-                size="lg"
-                target="_blank"
-              >
-                <i className="fab fa-facebook-square"></i>
-              </Button>
-              <UncontrolledTooltip delay={0} target="tooltip735272548">
-                Like us
-              </UncontrolledTooltip>
-              <Button
-                className="btn-neutral btn-icon btn-round"
-                color="linkedin"
-                href="https://www.linkedin.com/company-beta/9430489/?ref=creativetim"
-                id="tooltip647117716"
-                size="lg"
-                target="_blank"
-              >
-                <i className="fab fa-linkedin"></i>
-              </Button>
-              <UncontrolledTooltip delay={0} target="tooltip647117716">
-                Follow us
-              </UncontrolledTooltip>
-              <Button
-                className="btn-neutral btn-icon btn-round"
-                color="github"
-                href="https://github.com/creativetimofficial/now-ui-kit-react?ref=creativetim"
-                id="tooltip331904895"
-                size="lg"
-                target="_blank"
-              >
-                <i className="fab fa-github"></i>
-              </Button>
-              <UncontrolledTooltip delay={0} target="tooltip331904895">
-                Star on Github
-              </UncontrolledTooltip>
-            </Col>
-          </Row> */}
         </Container>
       </div>
     </>
