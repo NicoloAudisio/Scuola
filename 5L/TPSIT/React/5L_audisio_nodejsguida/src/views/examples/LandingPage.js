@@ -133,7 +133,6 @@ function LandingPage() {
                     <img
                       alt="..."
                       className="rounded-circle img-fluid img-raised"
-                      src={require("assets/img/avatar.jpg")}
                     ></img>
                     <h4 className="title">Romina Hadid</h4>
                     <p className="category text-info">Model</p>
@@ -213,7 +212,6 @@ function LandingPage() {
                     <img
                       alt="..."
                       className="rounded-circle img-fluid img-raised"
-                      src={require("assets/img/eva.jpg")}
                     ></img>
                     <h4 className="title">Eva Jenner</h4>
                     <p className="category text-info">Fashion</p>

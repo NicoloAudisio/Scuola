@@ -27,6 +27,14 @@ function Nodejs() {
     navigator.clipboard.writeText('let url = require("url")');
   };
 
+  const copiainstallejs = () => {
+    navigator.clipboard.writeText('npm install ejs');
+  };
+
+  const copiainstallexpress = () => {
+    navigator.clipboard.writeText('npm install express');
+  };
+
   const copiafs = () => {
     navigator.clipboard.writeText('let fs = require("fs")');
   };
@@ -155,6 +163,68 @@ function Nodejs() {
       http.createServer((req, resp) =>{
         
       }).listen(3000)
+    `);
+  };
+
+  const copiaimportexpress = () => {
+    navigator.clipboard.writeText(`
+      const express = require('express');
+      const app = express();
+    `);
+  };
+
+  const copiasetejs = () => {
+    navigator.clipboard.writeText(`
+      app.set('view engine', 'ejs');
+    `);
+  };
+
+  const copiagetejs = () => {
+    navigator.clipboard.writeText(`
+      app.get('/', function(req, res) {
+        res.render('index', { nome: 'Mario' });
+      });
+    `);
+  };
+
+  const copialistenejs = () => {
+    navigator.clipboard.writeText(`
+      app.listen(3000, function() {
+        console.log('App in ascolto sulla porta 3000');
+      });
+    `);
+  };
+
+  const copiaejs = () => {
+    navigator.clipboard.writeText(`
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Esempio EJS</title>
+    </head>
+    <body>
+        <h1>Ciao, <%= nome %>!</h1>
+        <p>Benvenuto nel nostro sito web.</p>
+    </body>
+    </html>
+    `);
+  };
+
+  const copiaexpress = () => {
+    navigator.clipboard.writeText(`
+    const express = require('express');
+    const app = express();
+    
+    app.set('view engine', 'ejs');
+    
+    app.get('/', function(req, res) {
+        res.render('index', { nome: 'Mario' });
+    });
+    
+    app.listen(3000, function() {
+        console.log('App in ascolto sulla porta 3000');
+    });
+    
     `);
   };
 
@@ -387,13 +457,10 @@ function Nodejs() {
                 EsModules
               </Badge>
               <Badge color="info" className="mr-3 mt-4">
-                Ejs
-              </Badge>
-              <Badge color="info" className="mr-3 mt-4">
                 Async / Await
               </Badge>
               <Badge color="info" className="mr-3 mt-4">
-                Express
+                Ejs
               </Badge>
             </Col>
           </Row>
@@ -1077,6 +1144,132 @@ function Nodejs() {
               </ul>
               <br/>
               <br/>
+            </Col>
+          </Row>
+          {/* EJS */}
+          <Row className="justify-content-md-center">
+            <Col className="text-left" lg="8" md="12">
+              <br/>
+              <br/>
+              <h4 className="title">EJS</h4>
+              <h5 className="description">
+              EJS, che sta per “Embedded JavaScript”, è un semplice linguaggio di templating che ti permette di generare markup HTML con JavaScript puro. Ecco alcune delle sue caratteristiche principali:
+              <ul>
+                <li>Sintassi semplice: Il codice JavaScript viene scritto in semplici tag scriptlet. Basta scrivere il codice JavaScript che emette l’HTML che desideri.</li>
+                <li>Esecuzione veloce: EJS mette in cache le funzioni JS intermedie per un’esecuzione rapida.</li>
+                <li>Debugging facile: È facile risolvere gli errori di EJS: i tuoi errori sono eccezioni JavaScript semplici, con i numeri di riga del template inclusi.</li>
+                <li>Sviluppo attivo: EJS ha una grande comunità di utenti attivi, e la libreria è in continuo sviluppo.</li>
+                <li>Supporto per il browser: EJS supporta sia il server JS che il browser</li>
+              </ul>
+              </h5>
+              <h5>Per utilizzare <i>EJS</i> bisogna seguire i seguenti passaggi:</h5>
+              <ul>
+                <li><h5>Installare ejs da terminale tramite il comando:</h5><br/>
+                  <Button color="info" type="button" onClick={copiainstallejs} size="lg">
+                      npm install ejs
+                    </Button>
+                </li>
+                <li><h5>Installare express da terminale tramite il comando:</h5><br/>
+                  <Button color="info" type="button" onClick={copiainstallexpress} size="lg">
+                      npm install express
+                    </Button>
+                </li>
+                <br/>
+                <li><h5>Creare una cartella</h5></li>
+                <li><h5>Creare un file all’interno della cartella chiamato “<i>app.js</i>”</h5></li>
+                <li><h5>Creare un file all’interno della cartella chiamato “<i>index.ejs</i>” all'interno di una cartella chiamata <i>"views"</i></h5></li>
+                <li><h5>Si inizia a lavorare sul file <i>app.js</i> andando a importare express:</h5></li>
+                <Button color="info" type="button" onClick={copiaimportexpress} size="lg">
+                  const express = require('express');<br/>
+                  const app = express();
+                </Button>
+                <br/>
+                <br/>
+                <li>
+                  <h5>Si va a impostare <i>view engine, ejs</i> sulla variabile app appena creata<br/></h5>
+                  <Button color="info" type="button" onClick={copiasetejs} size="lg">
+                    app.set('view engine', 'ejs');
+                  </Button>
+                </li>
+                <br/>
+                <br/>
+                <li><h5>Mediante il comando <i>.get</i> si imposta il file di riferimento ed eventuali variabili, come in questo caso il nome: <i>Mario</i></h5></li>
+                <Button color="info" type="button" onClick={copiagetejs} size="lg">
+                  app.get('/', function(req, res) &#123;<br/>
+                      res.render('index', &#123; nome: 'Mario' &#125;);<br/>
+                  &#125;);
+                </Button>
+                <br/>
+                <br/>
+                <li><h5>Mediante il comando <i>.listen</i> si imposta la porta dove mettere in ascolto in server</h5></li>
+                <Button color="info" type="button" onClick={copialistenejs} size="lg">
+                  app.listen(3000, function() &#123;<br/>
+                      console.log('App in ascolto sulla porta 3000');<br/>
+                  &#125;);
+                </Button>
+                <br/>
+                <br/>
+                <li><h5>Si modifica il file <i>index.ejs</i> andando a impostare mediante il comando <i>&lt;%= variabile %&gt;</i> le variabile impostate nel file <i>app.js</i></h5></li>
+                <Button color="info" type="button" onClick={copiaejs} size="lg">
+                  &lt;!DOCTYPE html&gt;<br/>
+                  &lt;html&gt;<br/>
+                    &lt;head&gt;<br/>
+                      &lt;title&gt;Esempio EJS&lt;/title&gt;<br/>
+                    &lt;/head&gt;<br/>
+                  &lt;body&gt;<br/>
+                  &lt;h1&gt;Ciao, &lt;%= nome %&gt;!&lt;/h1&gt;<br/>
+                    &lt;p&gt;Benvenuto nel nostro sito web.&lt;/p&gt;<br/>
+                  &lt;/body&gt;<br/>
+                  &lt;/html&gt;<br/>
+                </Button>
+                <br/>
+                <br/>
+                <li><h5>Per avviare il progetto, si utilizza il comando da terminale <i>node app.js</i></h5></li>
+                <br/>
+                <br/>
+                <br/>
+                <h5>Esempio completo</h5>
+                <h5 className="description">app.js</h5>
+                <Button color="info" type="button" onClick={copiaexpress} size="lg">
+                  const express = require('express');<br/>
+                  const app = express();<br/>
+                  <br/>
+                  app.set('view engine', 'ejs');<br/>
+                  <br/>
+                  app.get('/', function(req, res) &#123;<br/>
+                      res.render('index', &#123; nome: 'Mario' &#125;);<br/>
+                  &#125;);<br/>
+                  <br/>
+                  app.listen(3000, function() &#123;<br/>
+                      console.log('App in ascolto sulla porta 3000');<br/>
+                  &#125;);<br/>
+
+                </Button>
+                <br/>
+                <br/>
+                <h5 className="description">index.ejs</h5>
+                <Button color="info" type="button" onClick={copiaejs} size="lg">
+                  &lt;!DOCTYPE html&gt;<br/>
+                  &lt;html&gt;<br/>
+                    &lt;head&gt;<br/>
+                      &lt;title&gt;Esempio EJS&lt;/title&gt;<br/>
+                    &lt;/head&gt;<br/>
+                  &lt;body&gt;<br/>
+                  &lt;h1&gt;Ciao, &lt;%= nome %&gt;!&lt;/h1&gt;<br/>
+                    &lt;p&gt;Benvenuto nel nostro sito web.&lt;/p&gt;<br/>
+                  &lt;/body&gt;<br/>
+                  &lt;/html&gt;<br/>
+                </Button>
+              </ul>
+              <br/>
+              <br/>
+              <Col sm="12">
+                <img
+                  alt="..."
+                  className="rounded"
+                  src={require("assets/img/screenshot_ejs.png")}
+                ></img>
+              </Col>
             </Col>
           </Row>
         </Container>
