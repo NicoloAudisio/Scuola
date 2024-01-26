@@ -38,13 +38,14 @@ SHOW DATABASES;
 USE nuovodb;
 
 CREATE TABLE Persone(
-	id  INT NOT NULL AUTO_INCREMENT,
-	nome VARCHAR(45) NULL,
+	id INT NOT NULL AUTO_INCREMENT,
+	nome CHAR(45) NULL,
 	cognome VARCHAR(45) NULL,
 	dataDiNascita DATE NULL,
 	sesso ENUM('M', 'F') NULL,
 	PRIMARY KEY(id)
+);
 
-)
+echo "Tabella creata con successo!"
 ```
 La chiave primaria, di convenzione, va dichiarata sempre come ultimo parametro.
