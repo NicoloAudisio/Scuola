@@ -59,7 +59,7 @@ git add uno.txt
 ```
 git commit -a .-m "Aggiunto file uno.txt"
 ```
-- Push del commit
+- Push del commit **COMANDO DA FARE PRIMA DI INIZIARE A LAVORARE**
 ```
 git push
 ```
