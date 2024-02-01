@@ -1,6 +1,5 @@
 # GitLab
 
-=========================
 ### Comandi
 * Impostazione della mail
 ```
@@ -10,7 +9,6 @@ git config --global user.email mail
 ```
 git config --global user.name "Nome"
 ```
-=========================
 
 ## Ambiente di lavoro di Git
 * Working dir = in locale;
