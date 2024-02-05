@@ -1,6 +1,5 @@
 # GitLab
 
-=========================
 ### Comandi
 * Impostazione della mail
 ```
@@ -10,7 +9,6 @@ git config --global user.email mail
 ```
 git config --global user.name "Nome"
 ```
-=========================
 
 ## Ambiente di lavoro di Git
 * Working dir = in locale;
@@ -59,13 +57,56 @@ git add uno.txt
 ```
 - Commit del progetto [con il -a vengono presi tutti i file; con il -m si scrive il messaggio sul commit]
 ```
-git commit -a .-m "Aggiunto file uno.txt"
+git commit -a -m "Aggiunto file uno.txt"
 ```
-- Push del commit
+- Push del commit **COMANDO DA FARE PRIMA DI INIZIARE A LAVORARE**
 ```
 git push
 ```
 - Scaricare modifica da GitLab
 ```
 git pull
+```
+
+## Scrittura in un file da terminale
+* Creazione file
+```
+touche pippi.txt
+```
+* Scrittura all'interno del file
+```
+echo "Ciao" > pippi.txt
+```
+* Vedere il contenuto del file
+```
+more pippi.txt
+```
+
+## Branch
+* Creazione nuovo branch
+```
+git branch lavoro
+```
+* Entrare nel branch
+```
+git checkout lavoro
+```
+* Spostare da un branch ad un altro e salvataggio sul branch main
+```
+git checkout main
+```
+```
+git merge lavoro
+```
+```
+git status
+```
+```
+git add .
+```
+```
+git commit -a -m "Aggiunta progetto funzionante al branch main"
+```
+```
+git push
 ```
