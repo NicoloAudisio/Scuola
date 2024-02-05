@@ -4,12 +4,12 @@
         "partenza": "1F",
         "piano": 0,
         "numeroDestinazione":3,
-        "nomeDestinazione": "Lab Info",
-        "destinazione":"Lab Info",
+        "nomeDestinazione": "Lab TPSEE",
+        "destinazione":"Lab TPSEE",
         "pianoDestinazione": 0,
         "passaggi": [
             {"direzione": "Destra", "descrizione": "Gira a destra"},
-            {"direzione": "Avanti", "descrizione": "La tua destinazione si trova in fondo al corridoio sulla destra!"}            
+            {"direzione": "Avanti", "descrizione": "La tua destinazione si trova in fondo al corridoio sulla sinistra!"}            
         ]
     },
     {
@@ -17,25 +17,25 @@
         "partenza": "1G",
         "piano": 0,
         "numeroDestinazione":3,
-        "nomeDestinazione": "Lab Info",
-        "destinazione":"Lab Info",
+        "nomeDestinazione": "Lab TPSEE",
+        "destinazione":"Lab TPSEE",
         "pianoDestinazione": 0,
         "passaggi": [
             {"direzione": "Destra", "descrizione": "Gira a destra"},
-            {"direzione": "Avanti", "descrizione": "La tua destinazione si trova in fondo al corridoio sulla destra!"}            
+            {"direzione": "Avanti", "descrizione": "La tua destinazione si trova in fondo al corridoio sulla sinistra!"}            
         ]
     },
     {
-        "numeroLocale": 4,
-        "partenza": "Lab TPSEE",
+        "numeroLocale": 3,
+        "partenza": "Lab Info",
         "piano": 0,
         "numeroDestinazione":3,
-        "nomeDestinazione": "Lab Info",
-        "destinazione":"Lab Info",
+        "nomeDestinazione": "Lab TPSEE",
+        "destinazione":"Lab TPSEE",
         "pianoDestinazione": 0,
         "passaggi": [
-            {"direzione": "Sinistra", "descrizione": "Gira a sinistra"},
-            {"direzione": "Sinistra", "descrizione": "La tua destinazione si trova sulla sinistra!"}            
+            {"direzione": "Destra", "descrizione": "Gira a Destra"},
+            {"direzione": "Destra", "descrizione": "La tua destinazione si trova sulla destra!"}            
         ]
     },
     {
@@ -43,12 +43,12 @@
         "partenza": "1L",
         "piano": 0,
         "numeroDestinazione":3,
-        "nomeDestinazione": "Lab Info",
-        "destinazione":"Lab Info",
+        "nomeDestinazione": "Lab TPSEE",
+        "destinazione":"Lab TPSEE",
         "pianoDestinazione": 0,
         "passaggi": [
             {"direzione": "Sinistra", "descrizione": "Gira a sinistra"},
-            {"direzione": "Avanti", "descrizione": "La tua destinazione si trova in fondo al corridoio sulla destra!"}            
+            {"direzione": "Avanti", "descrizione": "La tua destinazione si trova in fondo al corridoio sulla sinistra!"}            
         ]
     },
     {
@@ -56,12 +56,12 @@
         "partenza": "1M",
         "piano": 0,
         "numeroDestinazione":3,
-        "nomeDestinazione": "Lab Info",
-        "destinazione":"Lab Info",
+        "nomeDestinazione": "Lab TPSEE",
+        "destinazione":"Lab TPSEE",
         "pianoDestinazione": 0,
         "passaggi": [
             {"direzione": "Sinistra", "descrizione": "Gira a sinistra"},
-            {"direzione": "Avanti", "descrizione": "La tua destinazione si trova in fondo al corridoio sulla destra!"}            
+            {"direzione": "Avanti", "descrizione": "La tua destinazione si trova in fondo al corridoio sulla sinistra!"}            
         ]
     },
     {
@@ -69,14 +69,14 @@
         "partenza": "3F",
         "piano": 0,
         "numeroDestinazione":3,
-        "nomeDestinazione": "Lab Info",
-        "destinazione":"Lab Info",
+        "nomeDestinazione": "Lab TPSEE",
+        "destinazione":"Lab TPSEE",
         "pianoDestinazione": 0,
         "passaggi": [
             {"direzione": "Destra", "descrizione": "Gira a destra"},
             {"direzione": "Avanti", "descrizione": "Vai avanti fino alla fine del corridoio!"},
             {"direzione": "Sinistra", "descrizione": "Gira a sinistra"},
-            {"direzione": "Avanti", "descrizione": "La tua destinazione si trova in fondo al corridoio sulla destra!"}
+            {"direzione": "Avanti", "descrizione": "La tua destinazione si trova in fondo al corridoio sulla sinistra!"}
 
         ]
     },
@@ -85,14 +85,14 @@
         "partenza": "Servizi Igienici Maschili",
         "piano": 0,
         "numeroDestinazione":3,
-        "nomeDestinazione": "Lab Info",
-        "destinazione":"Lab Info",
+        "nomeDestinazione": "Lab TPSEE",
+        "destinazione":"Lab TPSEE",
         "pianoDestinazione": 0,
         "passaggi": [
             {"direzione": "Destra", "descrizione": "Gira a destra"},
             {"direzione": "Avanti", "descrizione": "Vai avanti fino alla fine del corridoio!"},
             {"direzione": "Sinistra", "descrizione": "Gira a sinistra"},
-            {"direzione": "Avanti", "descrizione": "La tua destinazione si trova in fondo al corridoio sulla destra!"}
+            {"direzione": "Avanti", "descrizione": "La tua destinazione si trova in fondo al corridoio sulla sinistra!"}
 
         ]
     },
@@ -101,14 +101,14 @@
         "partenza": "Servizi Igienici Femminili",
         "piano": 0,
         "numeroDestinazione":3,
-        "nomeDestinazione": "Lab Info",
-        "destinazione":"Lab Info",
+        "nomeDestinazione": "Lab TPSEE",
+        "destinazione":"Lab TPSEE",
         "pianoDestinazione": 0,
         "passaggi": [
             {"direzione": "Destra", "descrizione": "Gira a destra"},
             {"direzione": "Avanti", "descrizione": "Vai avanti fino alla fine del corridoio!"},
             {"direzione": "Sinistra", "descrizione": "Gira a sinistra"},
-            {"direzione": "Avanti", "descrizione": "La tua destinazione si trova in fondo al corridoio sulla destra!"}
+            {"direzione": "Avanti", "descrizione": "La tua destinazione si trova in fondo al corridoio sulla sinistra!"}
 
         ]
     },
@@ -117,8 +117,8 @@
         "partenza": "4L",
         "piano": 0,
         "numeroDestinazione":3,
-        "nomeDestinazione": "Lab Info",
-        "destinazione":"Lab Info",
+        "nomeDestinazione": "Lab TPSEE",
+        "destinazione":"Lab TPSEE",
         "pianoDestinazione": 0,
         "passaggi": [
             {"direzione": "Sinistra", "descrizione": "Gira a sinistra"},
@@ -128,7 +128,7 @@
             {"direzione": "Destra", "descrizione": "Gira a destra"},
             {"direzione": "Avanti", "descrizione": "Vai avanti fino alla fine del corridoio!"},
             {"direzione": "Sinistra", "descrizione": "Gira a sinistra"},
-            {"direzione": "Avanti", "descrizione": "La tua destinazione si trova in fondo al corridoio sulla destra!"}
+            {"direzione": "Avanti", "descrizione": "La tua destinazione si trova in fondo al corridoio sulla sinistra!"}
 
         ]
     },
@@ -137,8 +137,8 @@
         "partenza": "2F",
         "piano": 0,
         "numeroDestinazione":3,
-        "nomeDestinazione": "Lab Info",
-        "destinazione":"Lab Info",
+        "nomeDestinazione": "Lab TPSEE",
+        "destinazione":"Lab TPSEE",
         "pianoDestinazione": 0,
         "passaggi": [
             {"direzione": "Sinistra", "descrizione": "Gira a sinistra"},
@@ -148,7 +148,7 @@
             {"direzione": "Destra", "descrizione": "Gira a destra"},
             {"direzione": "Avanti", "descrizione": "Vai avanti fino alla fine del corridoio!"},
             {"direzione": "Sinistra", "descrizione": "Gira a sinistra"},
-            {"direzione": "Avanti", "descrizione": "La tua destinazione si trova in fondo al corridoio sulla destra!"}
+            {"direzione": "Avanti", "descrizione": "La tua destinazione si trova in fondo al corridoio sulla sinistra!"}
 
         ]
     },
@@ -157,15 +157,15 @@
         "partenza": "4G",
         "piano": 0,
         "numeroDestinazione":3,
-        "nomeDestinazione": "Lab Info",
-        "destinazione":"Lab Info",
+        "nomeDestinazione": "Lab TPSEE",
+        "destinazione":"Lab TPSEE",
         "pianoDestinazione": 0,
         "passaggi": [
             {"direzione": "Avanti", "descrizione": "Vai avanti fino alla fine del corridoio!"},
             {"direzione": "Destra", "descrizione": "Gira a destra"},
             {"direzione": "Avanti", "descrizione": "Vai avanti fino alla fine del corridoio!"},
             {"direzione": "Sinistra", "descrizione": "Gira a sinistra"},
-            {"direzione": "Avanti", "descrizione": "La tua destinazione si trova in fondo al corridoio sulla destra!"}
+            {"direzione": "Avanti", "descrizione": "La tua destinazione si trova in fondo al corridoio sulla sinistra!"}
         ]
     },
     {
@@ -173,8 +173,8 @@
         "partenza": "Aula Decompressione",
         "piano": 0,
         "numeroDestinazione":3,
-        "nomeDestinazione": "Lab Info",
-        "destinazione":"Lab Info",
+        "nomeDestinazione": "Lab TPSEE",
+        "destinazione":"Lab TPSEE",
         "pianoDestinazione": 0,
         "passaggi": [
             {"direzione": "Destra", "descrizione": "Gira a destra"},
@@ -184,7 +184,7 @@
             {"direzione": "Destra", "descrizione": "Gira a destra"},
             {"direzione": "Avanti", "descrizione": "Vai avanti fino alla fine del corridoio!"},
             {"direzione": "Sinistra", "descrizione": "Gira a sinistra"},
-            {"direzione": "Avanti", "descrizione": "La tua destinazione si trova in fondo al corridoio sulla destra!"}
+            {"direzione": "Avanti", "descrizione": "La tua destinazione si trova in fondo al corridoio sulla sinistra!"}
         ]
     },
     {
@@ -192,8 +192,8 @@
         "partenza": "Aula Sostegno Piccola",
         "piano": 0,
         "numeroDestinazione":3,
-        "nomeDestinazione": "Lab Info",
-        "destinazione":"Lab Info",
+        "nomeDestinazione": "Lab TPSEE",
+        "destinazione":"Lab TPSEE",
         "pianoDestinazione": 0,
         "passaggi": [
             {"direzione": "Destra", "descrizione": "Gira a destra"},
@@ -205,7 +205,7 @@
             {"direzione": "Destra", "descrizione": "Gira a destra"},
             {"direzione": "Avanti", "descrizione": "Vai avanti fino alla fine del corridoio!"},
             {"direzione": "Sinistra", "descrizione": "Gira a sinistra"},
-            {"direzione": "Avanti", "descrizione": "La tua destinazione si trova in fondo al corridoio sulla destra!"}
+            {"direzione": "Avanti", "descrizione": "La tua destinazione si trova in fondo al corridoio sulla sinistra!"}
         ]
     },
     {
@@ -213,8 +213,8 @@
         "partenza": "2M",
         "piano": 0,
         "numeroDestinazione":3,
-        "nomeDestinazione": "Lab Info",
-        "destinazione":"Lab Info",
+        "nomeDestinazione": "Lab TPSEE",
+        "destinazione":"Lab TPSEE",
         "pianoDestinazione": 0,
         "passaggi": [
             {"direzione": "Sinistra", "descrizione": "Gira a sinistra"},
@@ -230,7 +230,7 @@
             {"direzione": "Destra", "descrizione": "Gira a destra"},
             {"direzione": "Avanti", "descrizione": "Vai avanti fino alla fine del corridoio!"},
             {"direzione": "Sinistra", "descrizione": "Gira a sinistra"},
-            {"direzione": "Avanti", "descrizione": "La tua destinazione si trova in fondo al corridoio sulla destra!"}
+            {"direzione": "Avanti", "descrizione": "La tua destinazione si trova in fondo al corridoio sulla sinistra!"}
         ]
     },
     {
@@ -238,8 +238,8 @@
         "partenza": "2L",
         "piano": 0,
         "numeroDestinazione":3,
-        "nomeDestinazione": "Lab Info",
-        "destinazione":"Lab Info",
+        "nomeDestinazione": "Lab TPSEE",
+        "destinazione":"Lab TPSEE",
         "pianoDestinazione": 0,
         "passaggi": [
             {"direzione": "Sinistra", "descrizione": "Gira a sinistra"},
@@ -255,7 +255,7 @@
             {"direzione": "Destra", "descrizione": "Gira a destra"},
             {"direzione": "Avanti", "descrizione": "Vai avanti fino alla fine del corridoio!"},
             {"direzione": "Sinistra", "descrizione": "Gira a sinistra"},
-            {"direzione": "Avanti", "descrizione": "La tua destinazione si trova in fondo al corridoio sulla destra!"}
+            {"direzione": "Avanti", "descrizione": "La tua destinazione si trova in fondo al corridoio sulla sinistra!"}
         ]
     },
     {
@@ -263,8 +263,8 @@
         "partenza": "Lab Fisica",
         "piano": 0,
         "numeroDestinazione":3,
-        "nomeDestinazione": "Lab Info",
-        "destinazione":"Lab Info",
+        "nomeDestinazione": "Lab TPSEE",
+        "destinazione":"Lab TPSEE",
         "pianoDestinazione": 0,
         "passaggi": [
             {"direzione": "Sinistra", "descrizione": "Gira a sinistra"},
@@ -280,7 +280,7 @@
             {"direzione": "Destra", "descrizione": "Gira a destra"},
             {"direzione": "Avanti", "descrizione": "Vai avanti fino alla fine del corridoio!"},
             {"direzione": "Sinistra", "descrizione": "Gira a sinistra"},
-            {"direzione": "Avanti", "descrizione": "La tua destinazione si trova in fondo al corridoio sulla destra!"}
+            {"direzione": "Avanti", "descrizione": "La tua destinazione si trova in fondo al corridoio sulla sinistra!"}
         ]
     },
     {
@@ -288,8 +288,8 @@
         "partenza": "Segreteria",
         "piano": 0,
         "numeroDestinazione":3,
-        "nomeDestinazione": "Lab Info",
-        "destinazione":"Lab Info",
+        "nomeDestinazione": "Lab TPSEE",
+        "destinazione":"Lab TPSEE",
         "pianoDestinazione": 0,
         "passaggi": [
             {"direzione": "Destra", "descrizione": "Gira a destra"},
@@ -307,7 +307,7 @@
             {"direzione": "Destra", "descrizione": "Gira a destra"},
             {"direzione": "Avanti", "descrizione": "Vai avanti fino alla fine del corridoio!"},
             {"direzione": "Sinistra", "descrizione": "Gira a sinistra"},
-            {"direzione": "Avanti", "descrizione": "La tua destinazione si trova in fondo al corridoio sulla destra!"}
+            {"direzione": "Avanti", "descrizione": "La tua destinazione si trova in fondo al corridoio sulla sinistra!"}
         ]
     },
     {
@@ -315,8 +315,8 @@
         "partenza": "Servizi Igienici (Amministrazione) Femminili",
         "piano": 0,
         "numeroDestinazione":3,
-        "nomeDestinazione": "Lab Info",
-        "destinazione":"Lab Info",
+        "nomeDestinazione": "Lab TPSEE",
+        "destinazione":"Lab TPSEE",
         "pianoDestinazione": 0,
         "passaggi": [
             {"direzione": "Destra", "descrizione": "Gira a destra"},
@@ -334,7 +334,7 @@
             {"direzione": "Destra", "descrizione": "Gira a destra"},
             {"direzione": "Avanti", "descrizione": "Vai avanti fino alla fine del corridoio!"},
             {"direzione": "Sinistra", "descrizione": "Gira a sinistra"},
-            {"direzione": "Avanti", "descrizione": "La tua destinazione si trova in fondo al corridoio sulla destra!"}
+            {"direzione": "Avanti", "descrizione": "La tua destinazione si trova in fondo al corridoio sulla sinistra!"}
         ]
     },
     {
@@ -342,8 +342,8 @@
         "partenza": "Servizi Igienici (Amministrazione) Maschili",
         "piano": 0,
         "numeroDestinazione":3,
-        "nomeDestinazione": "Lab Info",
-        "destinazione":"Lab Info",
+        "nomeDestinazione": "Lab TPSEE",
+        "destinazione":"Lab TPSEE",
         "pianoDestinazione": 0,
         "passaggi": [
             {"direzione": "Destra", "descrizione": "Gira a destra"},
@@ -361,7 +361,7 @@
             {"direzione": "Destra", "descrizione": "Gira a destra"},
             {"direzione": "Avanti", "descrizione": "Vai avanti fino alla fine del corridoio!"},
             {"direzione": "Sinistra", "descrizione": "Gira a sinistra"},
-            {"direzione": "Avanti", "descrizione": "La tua destinazione si trova in fondo al corridoio sulla destra!"}
+            {"direzione": "Avanti", "descrizione": "La tua destinazione si trova in fondo al corridoio sulla sinistra!"}
         ]
     },
     {
@@ -369,8 +369,8 @@
         "partenza": "Aula Docenti PT",
         "piano": 0,
         "numeroDestinazione":3,
-        "nomeDestinazione": "Lab Info",
-        "destinazione":"Lab Info",
+        "nomeDestinazione": "Lab TPSEE",
+        "destinazione":"Lab TPSEE",
         "pianoDestinazione": 0,
         "passaggi": [
             {"direzione": "Destra", "descrizione": "Gira a destra"},
@@ -388,7 +388,7 @@
             {"direzione": "Destra", "descrizione": "Gira a destra"},
             {"direzione": "Avanti", "descrizione": "Vai avanti fino alla fine del corridoio!"},
             {"direzione": "Sinistra", "descrizione": "Gira a sinistra"},
-            {"direzione": "Avanti", "descrizione": "La tua destinazione si trova in fondo al corridoio sulla destra!"}
+            {"direzione": "Avanti", "descrizione": "La tua destinazione si trova in fondo al corridoio sulla sinistra!"}
         ]
     },
     {
@@ -396,8 +396,8 @@
         "partenza": "Servizi Igienici (Amministrazione) Femminili",
         "piano": 0,
         "numeroDestinazione":3,
-        "nomeDestinazione": "Lab Info",
-        "destinazione":"Lab Info",
+        "nomeDestinazione": "Lab TPSEE",
+        "destinazione":"Lab TPSEE",
         "pianoDestinazione": 0,
         "passaggi": [
             {"direzione": "Avanti", "descrizione": "Vai avanti fino alla fine del corridoio!"},
@@ -414,7 +414,7 @@
             {"direzione": "Destra", "descrizione": "Gira a destra"},
             {"direzione": "Avanti", "descrizione": "Vai avanti fino alla fine del corridoio!"},
             {"direzione": "Sinistra", "descrizione": "Gira a sinistra"},
-            {"direzione": "Avanti", "descrizione": "La tua destinazione si trova in fondo al corridoio sulla destra!"}
+            {"direzione": "Avanti", "descrizione": "La tua destinazione si trova in fondo al corridoio sulla sinistra!"}
         ]
     },
     {
@@ -422,8 +422,8 @@
         "partenza": "Deposito Bidelleria PT",
         "piano": 0,
         "numeroDestinazione":3,
-        "nomeDestinazione": "Lab Info",
-        "destinazione":"Lab Info",
+        "nomeDestinazione": "Lab TPSEE",
+        "destinazione":"Lab TPSEE",
         "pianoDestinazione": 0,
         "passaggi": [
             {"direzione": "Destra", "descrizione": "Gira a destra"},
@@ -439,7 +439,7 @@
             {"direzione": "Destra", "descrizione": "Gira a destra"},
             {"direzione": "Avanti", "descrizione": "Vai avanti fino alla fine del corridoio!"},
             {"direzione": "Sinistra", "descrizione": "Gira a sinistra"},
-            {"direzione": "Avanti", "descrizione": "La tua destinazione si trova in fondo al corridoio sulla destra!"}
+            {"direzione": "Avanti", "descrizione": "La tua destinazione si trova in fondo al corridoio sulla sinistra!"}
         ]
     },
     {
@@ -447,8 +447,8 @@
         "partenza": "Aula Ricevimento 3",
         "piano": 1,
         "numeroDestinazione":3,
-        "nomeDestinazione": "Lab Info",
-        "destinazione":"Lab Info",
+        "nomeDestinazione": "Lab TPSEE",
+        "destinazione":"Lab TPSEE",
         "pianoDestinazione": 0,
         "passaggi": [
             {"direzione": "Sinistra", "descrizione": "Gira a sinistra"},
@@ -468,7 +468,7 @@
             {"direzione": "Destra", "descrizione": "Gira a destra"},
             {"direzione": "Avanti", "descrizione": "Vai avanti fino alla fine del corridoio!"},
             {"direzione": "Sinistra", "descrizione": "Gira a sinistra"},
-            {"direzione": "Avanti", "descrizione": "La tua destinazione si trova in fondo al corridoio sulla destra!"}
+            {"direzione": "Avanti", "descrizione": "La tua destinazione si trova in fondo al corridoio sulla sinistra!"}
         ]
     },
     {
@@ -476,8 +476,8 @@
         "partenza": "Aula Ricevimento 2",
         "piano": 1,
         "numeroDestinazione":3,
-        "nomeDestinazione": "Lab Info",
-        "destinazione":"Lab Info",
+        "nomeDestinazione": "Lab TPSEE",
+        "destinazione":"Lab TPSEE",
         "pianoDestinazione": 0,
         "passaggi": [
             {"direzione": "Sinistra", "descrizione": "Gira a sinistra"},
@@ -497,7 +497,7 @@
             {"direzione": "Destra", "descrizione": "Gira a destra"},
             {"direzione": "Avanti", "descrizione": "Vai avanti fino alla fine del corridoio!"},
             {"direzione": "Sinistra", "descrizione": "Gira a sinistra"},
-            {"direzione": "Avanti", "descrizione": "La tua destinazione si trova in fondo al corridoio sulla destra!"}
+            {"direzione": "Avanti", "descrizione": "La tua destinazione si trova in fondo al corridoio sulla sinistra!"}
         ]
     },
     {
@@ -505,8 +505,8 @@
         "partenza": "Aula Ricevimento 1",
         "piano": 1,
         "numeroDestinazione":3,
-        "nomeDestinazione": "Lab Info",
-        "destinazione":"Lab Info",
+        "nomeDestinazione": "Lab TPSEE",
+        "destinazione":"Lab TPSEE",
         "pianoDestinazione": 0,
         "passaggi": [
             {"direzione": "Sinistra", "descrizione": "Gira a sinistra"},
@@ -526,7 +526,7 @@
             {"direzione": "Destra", "descrizione": "Gira a destra"},
             {"direzione": "Avanti", "descrizione": "Vai avanti fino alla fine del corridoio!"},
             {"direzione": "Sinistra", "descrizione": "Gira a sinistra"},
-            {"direzione": "Avanti", "descrizione": "La tua destinazione si trova in fondo al corridoio sulla destra!"}
+            {"direzione": "Avanti", "descrizione": "La tua destinazione si trova in fondo al corridoio sulla sinistra!"}
         ]
     },
     {
@@ -534,8 +534,8 @@
         "partenza": "Biblioteca",
         "piano": 1,
         "numeroDestinazione":3,
-        "nomeDestinazione": "Lab Info",
-        "destinazione":"Lab Info",
+        "nomeDestinazione": "Lab TPSEE",
+        "destinazione":"Lab TPSEE",
         "pianoDestinazione": 0,
         "passaggi": [
             {"direzione": "Avanti", "descrizione": "Vai avanti fino alla fine del corridoio!"},
@@ -552,7 +552,7 @@
             {"direzione": "Destra", "descrizione": "Gira a destra"},
             {"direzione": "Avanti", "descrizione": "Vai avanti fino alla fine del corridoio!"},
             {"direzione": "Sinistra", "descrizione": "Gira a sinistra"},
-            {"direzione": "Avanti", "descrizione": "La tua destinazione si trova in fondo al corridoio sulla destra!"}
+            {"direzione": "Avanti", "descrizione": "La tua destinazione si trova in fondo al corridoio sulla sinistra!"}
         ]
     },
     {
@@ -560,8 +560,8 @@
         "partenza": "Lab Sistemi e Reti",
         "piano": -1,
         "numeroDestinazione":3,
-        "nomeDestinazione": "Lab Info",
-        "destinazione":"Lab Info",
+        "nomeDestinazione": "Lab TPSEE",
+        "destinazione":"Lab TPSEE",
         "pianoDestinazione": 0,
         "passaggi": [
             {"direzione": "Avanti", "descrizione": "Vai avanti fino alla fine del corridoio!"},
@@ -577,7 +577,7 @@
             {"direzione": "Destra", "descrizione": "Gira a destra"},
             {"direzione": "Avanti", "descrizione": "Vai avanti fino alla fine del corridoio!"},
             {"direzione": "Sinistra", "descrizione": "Gira a sinistra"},
-            {"direzione": "Avanti", "descrizione": "La tua destinazione si trova in fondo al corridoio sulla destra!"}
+            {"direzione": "Avanti", "descrizione": "La tua destinazione si trova in fondo al corridoio sulla sinistra!"}
         ]
     },
     {
@@ -585,8 +585,8 @@
         "partenza": "3L",
         "piano": -1,
         "numeroDestinazione":3,
-        "nomeDestinazione": "Lab Info",
-        "destinazione":"Lab Info",
+        "nomeDestinazione": "Lab TPSEE",
+        "destinazione":"Lab TPSEE",
         "pianoDestinazione": 0,
         "passaggi": [
             {"direzione": "Destra", "descrizione": "Gira a destra"},
@@ -603,7 +603,7 @@
             {"direzione": "Destra", "descrizione": "Gira a destra"},
             {"direzione": "Avanti", "descrizione": "Vai avanti fino alla fine del corridoio!"},
             {"direzione": "Sinistra", "descrizione": "Gira a sinistra"},
-            {"direzione": "Avanti", "descrizione": "La tua destinazione si trova in fondo al corridoio sulla destra!"}
+            {"direzione": "Avanti", "descrizione": "La tua destinazione si trova in fondo al corridoio sulla sinistra!"}
         ]
     },
     {
@@ -611,8 +611,8 @@
         "partenza": "5F",
         "piano": -1,
         "numeroDestinazione":3,
-        "nomeDestinazione": "Lab Info",
-        "destinazione":"Lab Info",
+        "nomeDestinazione": "Lab TPSEE",
+        "destinazione":"Lab TPSEE",
         "pianoDestinazione": 0,
         "passaggi": [
             {"direzione": "Destra", "descrizione": "Gira a destra"},
@@ -629,7 +629,7 @@
             {"direzione": "Destra", "descrizione": "Gira a destra"},
             {"direzione": "Avanti", "descrizione": "Vai avanti fino alla fine del corridoio!"},
             {"direzione": "Sinistra", "descrizione": "Gira a sinistra"},
-            {"direzione": "Avanti", "descrizione": "La tua destinazione si trova in fondo al corridoio sulla destra!"}
+            {"direzione": "Avanti", "descrizione": "La tua destinazione si trova in fondo al corridoio sulla sinistra!"}
         ]
     },
     {
@@ -637,8 +637,8 @@
         "partenza": "5L",
         "piano": -1,
         "numeroDestinazione":3,
-        "nomeDestinazione": "Lab Info",
-        "destinazione":"Lab Info",
+        "nomeDestinazione": "Lab TPSEE",
+        "destinazione":"Lab TPSEE",
         "pianoDestinazione": 0,
         "passaggi": [
             {"direzione": "Avanti", "descrizione": "Vai avanti fino alla fine del corridoio!"},
@@ -654,7 +654,7 @@
             {"direzione": "Destra", "descrizione": "Gira a destra"},
             {"direzione": "Avanti", "descrizione": "Vai avanti fino alla fine del corridoio!"},
             {"direzione": "Sinistra", "descrizione": "Gira a sinistra"},
-            {"direzione": "Avanti", "descrizione": "La tua destinazione si trova in fondo al corridoio sulla destra!"}
+            {"direzione": "Avanti", "descrizione": "La tua destinazione si trova in fondo al corridoio sulla sinistra!"}
         ]
     },
     {
@@ -662,8 +662,8 @@
         "partenza": "Lab Elettrotecnica",
         "piano": -1,
         "numeroDestinazione":3,
-        "nomeDestinazione": "Lab Info",
-        "destinazione":"Lab Info",
+        "nomeDestinazione": "Lab TPSEE",
+        "destinazione":"Lab TPSEE",
         "pianoDestinazione": 0,
         "passaggi": [
             {"direzione": "Avanti", "descrizione": "Vai avanti fino alla fine del corridoio!"},
@@ -675,7 +675,7 @@
             {"direzione": "Destra", "descrizione": "Gira a destra"},
             {"direzione": "Avanti", "descrizione": "Vai avanti fino alla fine del corridoio!"},
             {"direzione": "Sinistra", "descrizione": "Gira a sinistra"},
-            {"direzione": "Avanti", "descrizione": "La tua destinazione si trova in fondo al corridoio sulla destra!"}
+            {"direzione": "Avanti", "descrizione": "La tua destinazione si trova in fondo al corridoio sulla sinistra!"}
         ]
     },
     {
@@ -683,8 +683,8 @@
         "partenza": "3G",
         "piano": -1,
         "numeroDestinazione":3,
-        "nomeDestinazione": "Lab Info",
-        "destinazione":"Lab Info",
+        "nomeDestinazione": "Lab TPSEE",
+        "destinazione":"Lab TPSEE",
         "pianoDestinazione": 0,
         "passaggi": [
             {"direzione": "Sinistra", "descrizione": "Gira a sinistra"},
@@ -697,7 +697,7 @@
             {"direzione": "Destra", "descrizione": "Gira a destra"},
             {"direzione": "Avanti", "descrizione": "Vai avanti fino alla fine del corridoio!"},
             {"direzione": "Sinistra", "descrizione": "Gira a sinistra"},
-            {"direzione": "Avanti", "descrizione": "La tua destinazione si trova in fondo al corridoio sulla destra!"}
+            {"direzione": "Avanti", "descrizione": "La tua destinazione si trova in fondo al corridoio sulla sinistra!"}
         ]
     },
     {
@@ -706,7 +706,7 @@
         "piano": -1,
         "numeroDestinazione":3,
         "nomeDestinazione": "Servizi Igienici Maschili PS(-1)",
-        "destinazione":"Lab Info",
+        "destinazione":"Lab TPSEE",
         "pianoDestinazione": 0,
         "passaggi": [
             {"direzione": "Sinistra", "descrizione": "Gira a sinistra"},
@@ -719,7 +719,7 @@
             {"direzione": "Destra", "descrizione": "Gira a destra"},
             {"direzione": "Avanti", "descrizione": "Vai avanti fino alla fine del corridoio!"},
             {"direzione": "Sinistra", "descrizione": "Gira a sinistra"},
-            {"direzione": "Avanti", "descrizione": "La tua destinazione si trova in fondo al corridoio sulla destra!"}
+            {"direzione": "Avanti", "descrizione": "La tua destinazione si trova in fondo al corridoio sulla sinistra!"}
         ]
     },
     {
@@ -727,8 +727,8 @@
         "partenza": "Servizi Igienici Femminili PS(-1)",
         "piano": -1,
         "numeroDestinazione":3,
-        "nomeDestinazione": "Lab Info",
-        "destinazione":"Lab Info",
+        "nomeDestinazione": "Lab TPSEE",
+        "destinazione":"Lab TPSEE",
         "pianoDestinazione": 0,
         "passaggi": [
             {"direzione": "Sinistra", "descrizione": "Gira a sinistra"},
@@ -741,7 +741,7 @@
             {"direzione": "Destra", "descrizione": "Gira a destra"},
             {"direzione": "Avanti", "descrizione": "Vai avanti fino alla fine del corridoio!"},
             {"direzione": "Sinistra", "descrizione": "Gira a sinistra"},
-            {"direzione": "Avanti", "descrizione": "La tua destinazione si trova in fondo al corridoio sulla destra!"}
+            {"direzione": "Avanti", "descrizione": "La tua destinazione si trova in fondo al corridoio sulla sinistra!"}
         ]
     },
     {
@@ -749,8 +749,8 @@
         "partenza": "Bar",
         "piano": -1,
         "numeroDestinazione":3,
-        "nomeDestinazione": "Lab Info",
-        "destinazione":"Lab Info",
+        "nomeDestinazione": "Lab TPSEE",
+        "destinazione":"Lab TPSEE",
         "pianoDestinazione": 0,
         "passaggi": [
             {"direzione": "Destra", "descrizione": "Gira a destra"},
@@ -763,7 +763,7 @@
             {"direzione": "Destra", "descrizione": "Gira a destra"},
             {"direzione": "Avanti", "descrizione": "Vai avanti fino alla fine del corridoio!"},
             {"direzione": "Sinistra", "descrizione": "Gira a sinistra"},
-            {"direzione": "Avanti", "descrizione": "La tua destinazione si trova in fondo al corridoio sulla destra!"}
+            {"direzione": "Avanti", "descrizione": "La tua destinazione si trova in fondo al corridoio sulla sinistra!"}
         ]
     },
     {
@@ -771,8 +771,8 @@
         "partenza": "Aula Magna",
         "piano": -1,
         "numeroDestinazione":3,
-        "nomeDestinazione": "Lab Info",
-        "destinazione":"Lab Info",
+        "nomeDestinazione": "Lab TPSEE",
+        "destinazione":"Lab TPSEE",
         "pianoDestinazione": 0,
         "passaggi": [
             {"direzione": "Sinistra", "descrizione": "Gira a sinistra"},
@@ -783,7 +783,7 @@
             {"direzione": "Destra", "descrizione": "Gira a destra"},
             {"direzione": "Avanti", "descrizione": "Vai avanti fino alla fine del corridoio!"},
             {"direzione": "Sinistra", "descrizione": "Gira a sinistra"},
-            {"direzione": "Avanti", "descrizione": "La tua destinazione si trova in fondo al corridoio sulla destra!"}
+            {"direzione": "Avanti", "descrizione": "La tua destinazione si trova in fondo al corridoio sulla sinistra!"}
         ]
     },
     {
@@ -791,8 +791,8 @@
         "partenza": "4F",
         "piano": -1,
         "numeroDestinazione":3,
-        "nomeDestinazione": "Lab Info",
-        "destinazione":"Lab Info",
+        "nomeDestinazione": "Lab TPSEE",
+        "destinazione":"Lab TPSEE",
         "pianoDestinazione": 0,
         "passaggi": [
             {"direzione": "Destra", "descrizione": "Gira a destra"},
@@ -811,7 +811,7 @@
             {"direzione": "Sinistra", "descrizione": "Gira a sinistra"},
             {"direzione": "Avanti", "descrizione": "Vai avanti fino alla fine del corridoio!"},
             {"direzione": "Sinistra", "descrizione": "Gira a sinistra"},
-            {"direzione": "Avanti", "descrizione": "La tua destinazione si trova in fondo al corridoio sulla destra!"}
+            {"direzione": "Avanti", "descrizione": "La tua destinazione si trova in fondo al corridoio sulla sinistra!"}
         ]
     },
     {
@@ -819,8 +819,8 @@
         "partenza": "5G",
         "piano": -1,
         "numeroDestinazione":3,
-        "nomeDestinazione": "Lab Info",
-        "destinazione":"Lab Info",
+        "nomeDestinazione": "Lab TPSEE",
+        "destinazione":"Lab TPSEE",
         "pianoDestinazione": 0,
         "passaggi": [
             {"direzione": "Destra", "descrizione": "Gira a destra"},
@@ -839,7 +839,7 @@
             {"direzione": "Sinistra", "descrizione": "Gira a sinistra"},
             {"direzione": "Avanti", "descrizione": "Vai avanti fino alla fine del corridoio!"},
             {"direzione": "Sinistra", "descrizione": "Gira a sinistra"},
-            {"direzione": "Avanti", "descrizione": "La tua destinazione si trova in fondo al corridoio sulla destra!"}
+            {"direzione": "Avanti", "descrizione": "La tua destinazione si trova in fondo al corridoio sulla sinistra!"}
         ]
     },
     {
@@ -847,8 +847,8 @@
         "partenza": "Lab Sistemi Elettro",
         "piano": -1,
         "numeroDestinazione":3,
-        "nomeDestinazione": "Lab Info",
-        "destinazione":"Lab Info",
+        "nomeDestinazione": "Lab TPSEE",
+        "destinazione":"Lab TPSEE",
         "pianoDestinazione": 0,
         "passaggi": [
             {"direzione": "Destra", "descrizione": "Gira a destra"},
@@ -867,7 +867,7 @@
             {"direzione": "Sinistra", "descrizione": "Gira a sinistra"},
             {"direzione": "Avanti", "descrizione": "Vai avanti fino alla fine del corridoio!"},
             {"direzione": "Sinistra", "descrizione": "Gira a sinistra"},
-            {"direzione": "Avanti", "descrizione": "La tua destinazione si trova in fondo al corridoio sulla destra!"}
+            {"direzione": "Avanti", "descrizione": "La tua destinazione si trova in fondo al corridoio sulla sinistra!"}
         ]
     },
     {
@@ -875,8 +875,8 @@
         "partenza": "Ufficio Tecnico",
         "piano": -1,
         "numeroDestinazione":3,
-        "nomeDestinazione": "Lab Info",
-        "destinazione":"Lab Info",
+        "nomeDestinazione": "Lab TPSEE",
+        "destinazione":"Lab TPSEE",
         "pianoDestinazione": 0,
         "passaggi": [
             {"direzione": "Sinistra", "descrizione": "Gira a sinistra"},
@@ -895,7 +895,7 @@
             {"direzione": "Sinistra", "descrizione": "Gira a sinistra"},
             {"direzione": "Avanti", "descrizione": "Vai avanti fino alla fine del corridoio!"},
             {"direzione": "Sinistra", "descrizione": "Gira a sinistra"},
-            {"direzione": "Avanti", "descrizione": "La tua destinazione si trova in fondo al corridoio sulla destra!"}
+            {"direzione": "Avanti", "descrizione": "La tua destinazione si trova in fondo al corridoio sulla sinistra!"}
         ]
     },
     {
@@ -903,8 +903,8 @@
         "partenza": "Deposito",
         "piano": -1,
         "numeroDestinazione":3,
-        "nomeDestinazione": "Lab Info",
-        "destinazione":"Lab Info",
+        "nomeDestinazione": "Lab TPSEE",
+        "destinazione":"Lab TPSEE",
         "pianoDestinazione": 0,
         "passaggi": [
             {"direzione": "Sinistra", "descrizione": "Gira a sinistra"},
@@ -923,7 +923,7 @@
             {"direzione": "Sinistra", "descrizione": "Gira a sinistra"},
             {"direzione": "Avanti", "descrizione": "Vai avanti fino alla fine del corridoio!"},
             {"direzione": "Sinistra", "descrizione": "Gira a sinistra"},
-            {"direzione": "Avanti", "descrizione": "La tua destinazione si trova in fondo al corridoio sulla destra!"}
+            {"direzione": "Avanti", "descrizione": "La tua destinazione si trova in fondo al corridoio sulla sinistra!"}
         ]
     },
     {
@@ -931,8 +931,8 @@
         "partenza": "Spogliatoio maschile 1",
         "piano": -1,
         "numeroDestinazione":3,
-        "nomeDestinazione": "Lab Info",
-        "destinazione":"Lab Info",
+        "nomeDestinazione": "Lab TPSEE",
+        "destinazione":"Lab TPSEE",
         "pianoDestinazione": 0,
         "passaggi": [
             {"direzione": "Destra", "descrizione": "Gira a destra"},
@@ -952,7 +952,7 @@
             {"direzione": "Sinistra", "descrizione": "Gira a sinistra"},
             {"direzione": "Avanti", "descrizione": "Vai avanti fino alla fine del corridoio!"},
             {"direzione": "Sinistra", "descrizione": "Gira a sinistra"},
-            {"direzione": "Avanti", "descrizione": "La tua destinazione si trova in fondo al corridoio sulla destra!"}
+            {"direzione": "Avanti", "descrizione": "La tua destinazione si trova in fondo al corridoio sulla sinistra!"}
         ]
     },
     {
@@ -960,8 +960,8 @@
         "partenza": "Spogliatoio maschile 2",
         "piano": -1,
         "numeroDestinazione":3,
-        "nomeDestinazione": "Lab Info",
-        "destinazione":"Lab Info",
+        "nomeDestinazione": "Lab TPSEE",
+        "destinazione":"Lab TPSEE",
         "pianoDestinazione": 0,
         "passaggi": [
             {"direzione": "Destra", "descrizione": "Gira a destra"},
@@ -981,7 +981,7 @@
             {"direzione": "Sinistra", "descrizione": "Gira a sinistra"},
             {"direzione": "Avanti", "descrizione": "Vai avanti fino alla fine del corridoio!"},
             {"direzione": "Sinistra", "descrizione": "Gira a sinistra"},
-            {"direzione": "Avanti", "descrizione": "La tua destinazione si trova in fondo al corridoio sulla destra!"}
+            {"direzione": "Avanti", "descrizione": "La tua destinazione si trova in fondo al corridoio sulla sinistra!"}
         ]
     },
     {
@@ -989,8 +989,8 @@
         "partenza": "Spogliatoio femminile",
         "piano": -1,
         "numeroDestinazione":3,
-        "nomeDestinazione": "Lab Info",
-        "destinazione":"Lab Info",
+        "nomeDestinazione": "Lab TPSEE",
+        "destinazione":"Lab TPSEE",
         "pianoDestinazione": 0,
         "passaggi": [
             {"direzione": "Destra", "descrizione": "Gira a destra"},
@@ -1010,7 +1010,7 @@
             {"direzione": "Sinistra", "descrizione": "Gira a sinistra"},
             {"direzione": "Avanti", "descrizione": "Vai avanti fino alla fine del corridoio!"},
             {"direzione": "Sinistra", "descrizione": "Gira a sinistra"},
-            {"direzione": "Avanti", "descrizione": "La tua destinazione si trova in fondo al corridoio sulla destra!"}
+            {"direzione": "Avanti", "descrizione": "La tua destinazione si trova in fondo al corridoio sulla sinistra!"}
         ]
     },
     {
@@ -1018,8 +1018,8 @@
         "partenza": "Palestra",
         "piano": -1,
         "numeroDestinazione":3,
-        "nomeDestinazione": "Lab Info",
-        "destinazione":"Lab Info",
+        "nomeDestinazione": "Lab TPSEE",
+        "destinazione":"Lab TPSEE",
         "pianoDestinazione": 0,
         "passaggi": [
             {"direzione": "Sinistra", "descrizione": "Gira a sinistra"},
@@ -1039,7 +1039,7 @@
             {"direzione": "Sinistra", "descrizione": "Gira a sinistra"},
             {"direzione": "Avanti", "descrizione": "Vai avanti fino alla fine del corridoio!"},
             {"direzione": "Sinistra", "descrizione": "Gira a sinistra"},
-            {"direzione": "Avanti", "descrizione": "La tua destinazione si trova in fondo al corridoio sulla destra!"}
+            {"direzione": "Avanti", "descrizione": "La tua destinazione si trova in fondo al corridoio sulla sinistra!"}
         ]
     }
 ]
