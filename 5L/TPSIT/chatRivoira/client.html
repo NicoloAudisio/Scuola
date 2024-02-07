@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Aggiungi Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <script src="https://cdn.socket.io/4.7.4/socket.io.min.js" integrity="sha384-Gr6Lu2Ajx28mzwyVR8CFkULdCU7kMlZ9UthllibdOSo6qAiN+yXNHqtgdTvFXMT4" crossorigin="anonymous"></script>
+    <script>
+        let socket;
+        const connetti = () => {
+            let mioIP = document.querySelector("[placeholder='Inserisci il tuo ip...']");
+            let mioNick = document.querySelector("[placeholder='Inserisci il tuo nickname...']");
+            let mioMessaggio = document.querySelector("[placeholder='Inserisci il tuo messaggio...']");
+
+            if (mioIP.value == "" && mioNick.value == "") {
+                alert("ERRORE")
+            } else {
+                socket = io.connect(mioIP.value);
+                socket.emit("invionick", mioNick.value);
+
+                socket.on("elenconick", (dato) => {
+                    let visualizzanick = document.querySelector(".container");
+                    visualizzanick.innerHTML = ""
+                    for (i = 0; i < dato.length; i++) {
+                        visualizzanick.innerHTML = visualizzanick.innerHTML + "\n" + dato[i] + "</br>"
+                    }
+                })
+
+                socket.on("ricevomessaggio", (dato) => {
+                    let visualizzamessaggio = document.querySelector(".container_chat");
+                    visualizzamessaggio.innerHTML = visualizzamessaggio.innerHTML + "\n" + dato + "</br>"
+                })
+
+                mioMessaggio.addEventListener('keypress', function (e) {
+                    if (e.key === 'Enter') {
+                        socket.emit("inviamessaggio", mioMessaggio.value);
+                        mioMessaggio.value = "";
+                    }
+                });
+            }
+        }
+    </script>
+
+    <style>
+        .container, .container_chat {
+            background-color: cyan;
+            border-radius: 50px;
+            color: blue;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 text-center mt-3">
+                <h1>Chat Rivoira</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 d-flex justify-content-between mt-3">
+                <input type="text" name="ip" id="ip" placeholder="Inserisci il tuo ip..." value="http://172.10.196.3:3000" class="mr-2">
+                <input type="text" name="nickname" id="nickname" placeholder="Inserisci il tuo nickname..." value="Audisio" class="mr-2">
+                <input type="button" value="Connetti" onclick="connetti()" class="btn btn-primary">
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-6">
+                <div class="container p-3">
+                    <!-- Nomi connessi -->
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="container_chat p-3">
+                    <!-- Messaggi -->
+                </div>
+                <div class="mt-3 d-flex justify-content-between">
+                    <input type="text" name="messaggio" id="messaggio" placeholder="Inserisci il tuo messaggio..." class="form-control mr-2">
+                    <button class="btn btn-primary">Invia</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
