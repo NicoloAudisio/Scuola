@@ -18,3 +18,30 @@ L'ordine con cui sono scritte le ACL è importante: essendo eseguite in sequenza
 * da 1 a 99 e da 1300 a 1999 sono le ACL standard che si riferisocno al protocollo IP;
 * da 100 a 199 e da 200 a 2699 sono le ACL estese riferite a IP.
 ---
+Per creare una **ACL Standard** su Packet Tracer:  
+`Router(config)#access-list access-list-number {permit|deny} source [source wildcard] [log]`
+
+## Sequenza di passi per la creazione delle ACL standard
+1. Entrare nel CLI (Command Line Interface ) del router  
+2. Entrare in modalità configurazione (configure terminal)  
+3. Assegnare un nome all’access list (ad esempio per le standard 1-99)  
+4. Indicare se permette o nega (permit-deny)  
+5. Inserire IP dell’host o della rete  
+6. Ripetere i passaggi 4-5 per inserire altre regole  
+7. Assegnare la regola creata all’interfaccia(interface nome interfaccia)  
+8. Assegnare la regola all’interfaccia selezionata in input-output  
+
+### Esempio
+R1>enable  
+R1#configure terminal  
+R1(config)#access-list 1 deny 192.168.1.1 0.0.0.0 (blocca host con IP 192.168.1.1, utilizzando la wildcard)  
+R1(config)#access-list 1 permit any (permette a tutti gli altri ip di essere inoltrati)  
+R1(config)#interface fastEthernet 0/1 (apertura della configurazione dell’interfaccia)  
+R1(config-if)#ip access-group 1 out (assegnazione regole dell’ACL 1 all’interfaccia in modalità output)  
+  
+### Comandi utili:
+Router# show access-lists (Visualizza le ACL presenti nel Router)  
+Router# show ip access-lists (Visualizza le IP ACL presenti nel Router)  
+Router# show access-lists id_ACL (Visualizza il contenuto di una ACL)  
+Router# show ip interface (Visualizza il posizionamento e la direzione delle ACL)  
+Router# show ip interface nome_interfaccia (Visualizza le ACL applicate ad un’interfaccia specifica  
