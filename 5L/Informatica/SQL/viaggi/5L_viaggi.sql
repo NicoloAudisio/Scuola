@@ -1,0 +1,45 @@
+-- AUDISIO 5L
+
+DROP database Viaggi;
+CREATE DATABASE IF NOT EXISTS Viaggi;
+USE Viaggi;
+
+CREATE TABLE IF NOT EXISTS Destinazione(
+    CodDest VARCHAR(4) NOT NULL PRIMARY KEY,
+    Denominazione VARCHAR(50) NOT NULL,
+    Moneta VARCHAR(50) NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS Cliente(
+    CodCli VARCHAR(4) NOT NULL PRIMARY KEY,
+    CognomeCli VARCHAR(50) NOT NULL,
+    NomeCli VARCHAR(50) NOT NULL,
+    IndirizzoCli VARCHAR(50) NOT NULL,
+    TelCli VARCHAR(20) NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS TourOperator(
+    CodTour VARCHAR(4) NOT NULL PRIMARY KEY,
+    NomeTour VARCHAR(50) NOT NULL,
+    IndirizzoTour VARCHAR(50) NOT NULL,
+    TelTour VARCHAR(20) NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS Pacchetti(
+    CodPacch VARCHAR(4) NOT NULL PRIMARY KEY,
+    Modalita VARCHAR(50) NOT NULL,
+    Prezzo INT NOT NULL,
+    CodDest VARCHAR(4) NOT NULL,
+    CodTour VARCHAR(4) NOT NULL,
+    FOREIGN KEY(CodDest) REFERENCES Destinazione(CodDest),
+    FOREIGN KEY(CodTour) REFERENCES TourOperator(CodTour)
+);
+
+CREATE TABLE IF NOT EXISTS Acquisti(
+    CodAcq VARCHAR(4) NOT NULL PRIMARY KEY,
+    CodCli VARCHAR(4) NOT NULL,
+    CodPacch VARCHAR(4) NOT NULL,
+    DataAcquisto DATE NOT NULL,
+    FOREIGN KEY(CodCli) REFERENCES Cliente(CodCli),
+    FOREIGN KEY(CodPacch) REFERENCES Pacchetti(CodPacch)
+);
